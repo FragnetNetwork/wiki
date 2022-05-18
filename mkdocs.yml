@@ -1,0 +1,44 @@
+site_name: "Fragnet Public Wiki (Beta)"
+repo_url: https://github.com/FragnetNetwork/wiki
+plugins:
+  - awesome-pages
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      enabled: true
+      fallback_to_build_date: true
+      locale: en
+      timezone: Etc/UTC
+      type: iso_date
+  - htmlproofer:
+      raise_error: true
+      validate_external_urls: true
+  - git-authors:
+      enabled: true
+theme:
+  custom_dir: theme
+  favicon: assets/favicon.ico
+  features:
+    - navigation.indexes
+  icon:
+    repo: fontawesome/brands/github
+  logo: assets/logo.png
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/lightbulb-outline
+        name: "Switch to dark mode"
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/lightbulb
+        name: "Switch to light mode"
+extra:
+  company: "Fragnet"
+  company_domain: "fragnet.net"
+  gp: "Game Panel"
+  gp_domain: "gamepanel.fragnet.net"
+  gp2: "Fragify"
+  gp2_domain: "panel.fragify.net"
