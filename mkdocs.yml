@@ -6,7 +6,7 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
       enabled: true
-      fallback_to_build_date: true
+      fallback_to_build_date: false
       locale: en
       timezone: Etc/UTC
       type: iso_date
