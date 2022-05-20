@@ -15,12 +15,15 @@ plugins:
       validate_external_urls: true
   - git-authors:
       enabled: true
+extra_css:
+  - assets/stylesheets/custom.css
 theme:
   custom_dir: theme
   favicon: assets/favicon.ico
   features:
     - navigation.indexes
     - navigation.sections
+    - navigation.tracking
   icon:
     repo: fontawesome/brands/github
   logo: assets/logo.png
