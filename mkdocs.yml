@@ -15,6 +15,9 @@ plugins:
       validate_external_urls: true
   - git-authors:
       enabled: true
+      show_contribution: true
+      exclude:
+        - index.md
 extra_css:
   - assets/stylesheets/custom.css
 theme:
