@@ -1,7 +1,7 @@
 Adding yourself as an administrator in SourceMod is actually easier than you would think.  
   
 1\. Write down your SteamID, you will be needing this later.
-2. [Access the Game Panel](https://gamepanel.fragnet.net/Interface/Base/Login.aspx), and authenticate using your set or provided log-in details.  
+2\. Access the game panel, and authenticate using your set or provided log-in details.  
 3\. Go to your CS:GO server.  
 4\. Click on File Manager then go to File Manager -> csgo -> addons -> sourcemod -> configs and then next to admins\_simple.ini in the drop down menu, choose edit.  
 5\. Scroll down to the bottom and then you write this "STEAM\_1:X:XXXXXX" "99:z" (replacing the SteamID with your steam id).  
