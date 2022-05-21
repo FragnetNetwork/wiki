@@ -22,7 +22,6 @@ Manual installation
 You can upload mods manually to your server by using FS19 Control Panel or FTP client.  
 To upload mods via FS19 Control Panel, simply navigate to Mods and you will see an option to "Upload mods". Select the .zip archive of the mod on your PC and upload it!  
   
-For more informations on how to manually install mods refer to this article: [How to manage your Farming Simulator 19 server files using FTP (File transfer protocol)](https://wiki.fragnet.net/pages/viewpage.action?pageId=66175)
 
 Disabling and uninstalling Mods
 -------------------------------
