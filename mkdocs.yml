@@ -14,7 +14,7 @@ plugins:
       raise_error: true
       validate_external_urls: true
   - git-authors:
-      enabled: true
+      enabled: false
       show_contribution: true
       exclude:
         - index.md
