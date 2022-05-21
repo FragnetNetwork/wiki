@@ -12,7 +12,7 @@ Automatic installation
 
 To manage the mods on the automatic download feature, simply click the download button to start the download of the desired mod
 
-![](https://fragnet.atlassian.net/wiki/download/thumbnails/394788972/mods1.png?version=1&modificationDate=1637529466482&cacheVersion=1&api=v2&width=800 "Knowledge base > Installing mods on your Farming Simulator 22 server > mods1.png")
+![Mods](images/mods1.png")
 
 Mods that are found here are directly managed by Giants, so the version of the mods should always be up to date. 
 
