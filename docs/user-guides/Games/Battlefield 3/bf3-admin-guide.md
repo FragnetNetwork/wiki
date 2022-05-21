@@ -6,4 +6,4 @@ Apart from giving you an option to configure your server and administrate it, Pr
 
 Procon Client can be obtained from here: [Procon Download](https://myrcon.net/files/file/29-procon-client/)
 
-For help on how to use Procon client and how to configure your server with Procon, please refer to [Procon Layer](https://kb.fragnet.net/index/Procon-Layer.76022391.html) Knowledge base section.
+For help on how to use Procon client and how to configure your server with Procon, please refer to Procon Layer Knowledge base section.
