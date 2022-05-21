@@ -28,7 +28,7 @@ You can follow these steps to access and manage your server files using FTP :
 
 Use those credentials to fill in the field in your FTP client then click on "quick connect"
 
-![FTP](../images/6209c3d8-4215-4864-ba37-89194dc32fec.png")
+![FTP](../images/6209c3d8-4215-4864-ba37-89194dc32fec.png)
 
 Be careful when you type this information as you may get a 5 minutes ban if you attempt to login with the wrong credentials repeatedly. In that situation, simply disconnect and wait 5 minutes before trying again
 
@@ -39,4 +39,4 @@ You can upload, download, and move files from your computer to your server and v
 
 Alternatively, you may right-click on the relevant file or folder and hit the "Download" or "Upload" button.
 
-![FTP2](../images/5e452f94-0422-4acd-a1ed-5c6942744824.png")
+![FTP2](../images/5e452f94-0422-4acd-a1ed-5c6942744824.png)

@@ -23,13 +23,13 @@ In order to create your own Collection follow these steps:
 *   Go to the [Collections Tab](https://steamcommunity.com/workshop/browse/?appid=730&section=collections) in the CSGO workshop,
 *   Create Collection by pressing a blue button labeled "Create Collection", and follow the instructions to successfully create your collection
 *   Start adding maps from [CSGO Workshop](https://steamcommunity.com/workshop/browse?appid=730&browsesort=trend) to your collection by opening map page and pressing Add to collection  
-    ![Collection](../images/fragnetaddcollection.png")
+    ![Collection](../images/fragnetaddcollection.png)
 
 Once you are done adding maps to your collection,  it's time to Publish it. Keep in mind that your collection needs to be public so that server can access it.
 
 You can access your collection by navigating to "Profile" → "Content" → "Collections"
 
-![Add Collection](../images/Screenshot_16.png")
+![Add Collection](../images/Screenshot_16.png)
 
   
 
@@ -48,7 +48,7 @@ This can be easily done on your Fragnet Game panel by following these steps:
 1.  While your are on your server panel go to "Commandline Manager" → "Custom Commandlines"
 2.  Create new commandline
 3.  Fill in the following lines with the authkey and collection id that we got from the steps above. (for +host\_workshop\_map just go to any map in your collection and get the ID of it the same way you got your collection ID)  
-    ![Commandline Manager](../images/fragnetauthe.png")
+    ![Commandline Manager](../images/fragnetauthe.png)
 4.  Restart your server
 
 > **_NOTE:_**  Keep in mind for step 3, apart from filling in those details, you still need to enable and fill the lines such as game\_type and game\_mode otherwise server will not start!

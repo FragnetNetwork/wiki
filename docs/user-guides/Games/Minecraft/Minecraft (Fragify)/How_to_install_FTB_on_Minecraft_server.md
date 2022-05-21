@@ -35,7 +35,7 @@ Once you’ve found which modpack you want to install follow these steps:
 
 FTB Modpack that you wanted is now installed on the server!
 
-![FTB Search](../images/78c08c96-8844-4812-8b38-2902559bf058.gif")
+![FTB Search](../images/78c08c96-8844-4812-8b38-2902559bf058.gif)
 
 Method 2 - Using the FTB Modpack ID
 -----------------------------------
@@ -53,4 +53,4 @@ In order to install a Modpack via its ID follow these steps:
 
 FTB Modpack that you wanted is now installed on the server!
 
-![FTB Modpack ID](../images/eb88a081-7884-49fd-9d3f-0e970107e9f4.gif")
+![FTB Modpack ID](../images/eb88a081-7884-49fd-9d3f-0e970107e9f4.gif)

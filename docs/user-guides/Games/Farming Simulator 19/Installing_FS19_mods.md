@@ -12,7 +12,7 @@ Automatic installation
 
 To manage the mods on the automatic download feature, simply click the download button to start the download of the desired mod
 
-![mods1](../images/mods1.png")
+![mods1](../images/mods1.png)
 
 Mods that are found here are directly managed by Giants, so the version of the mods should always be up to date. 
 

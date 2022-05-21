@@ -15,6 +15,6 @@ Simply follow these steps:
 *   Locate the “Docker image” option and select the version you would like to use from the dropdown menu
     
 
-![Java version](../images/Screenshot_59.png")
+![Java version](../images/Screenshot_59.png)
 
 Your server will be running the selected Java version on the next startup.

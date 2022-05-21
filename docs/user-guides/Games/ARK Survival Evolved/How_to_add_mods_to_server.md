@@ -12,7 +12,7 @@ You are now seeing a section with all the mods from Steam Workshop. To find a mo
 
 **Example:**
 
-![Game Panel Steam Workshop](../images/ARK_Mod_ss.png")
+![Game Panel Steam Workshop](../images/ARK_Mod_ss.png)
 
 **Note:** After every installation of a mod, it will appear in **Steam Workshop (installed)** section.
 
