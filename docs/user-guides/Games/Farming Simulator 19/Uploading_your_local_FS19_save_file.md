@@ -9,7 +9,7 @@ Preparing the save game
 2.  After you open the "savegame" folder you will see many files such as XML, GDM, or cache...
 3.  Select all files from that folder, right click on them and press "Add to archive". Make sure it's .zip format.
 
-![save1](images/save1.png")
+![save1](../images/save1.png")
 
 Uploading the save game
 =======================
@@ -22,7 +22,7 @@ Uploading the save game
 4.  Press the "Choose File" button, and select that .zip archive we created 
 5.  Press the "Upload" button
 
-![save2](images/save2.png")
+![save2](../images/save2.png")
 
 If everything done correctly, your save game should be listed under "Manage Savegames"
 

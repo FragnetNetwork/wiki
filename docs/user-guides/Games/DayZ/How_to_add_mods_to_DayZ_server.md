@@ -25,14 +25,14 @@ This is the most important part of this guide and this will require a lot of att
 This is a very important step, some of the mods require other mods to be enabled/loaded before the specific one. To know if certain mod requires other mod in order to work there will be a box on mod Steam page that will show needed mod in order for this one to work, like shown on the next screenshot.  
 If there is no Required Items box on mod Steam page then they can be loaded without any other mods being required
 
-![Required Items](images/image-20220322-125900.png")
+![Required Items](../images/image-20220322-125900.png")
 
 If you don’t have the mod named here installed you will first need to install it.  
 **Step 4:** After you ordered them by tabs in the browser, you will now need to start adjusting command line  
 **Step 5:** Go to previously created custom commandline **Commandline Manager → Custom Commandline** and press **Edit**.  
 **Step 6:** In the mods input box you will need to write mod ID. To find mod ID simply press on the tab of already opened mod Steam page, select URL and the copy the number like shown on the screenshot
 
-![URL ID](images/image-20220322-130721.png")
+![URL ID](../images/image-20220322-130721.png")
 
 Mods are listed in the commandline like shown here, always start with @ and end with ; except the last one  
 @1559212036;@1590841260;@1646187754

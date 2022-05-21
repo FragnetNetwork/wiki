@@ -8,7 +8,7 @@ To create a custom commandline in DayZ you will need to follow the next steps:
 **Step 4:** You will be displayed a list with a lot of checkboxes. First you will need to name your custom commandline, to do this next to **Description** write the name of your commandline (ex. DayZ custom commandline)  
 **Step 5:** On to the checkboxes you will need the following checkboxes like shown on a screenshot
 
-![](images/image-20220322-122211.png")
+![](../images/image-20220322-122211.png")
 
 **Step 7:** Fill in the required details and once you are done, press **Save**  
 **Step 8:** On the right side of the custom commandline you will see two buttons **Edit** and **Select**, press **Select** and the newly created custom commandline will be selected

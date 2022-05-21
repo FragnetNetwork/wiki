@@ -9,7 +9,7 @@ This can be done by the following:
 *   Locate the “Feed the Beast” and press “Install”
     
 
-![Feed The Beast](images/9c7dffa4-6b5a-40f4-824e-81dadc8163cb.png")
+![Feed The Beast](../images/9c7dffa4-6b5a-40f4-824e-81dadc8163cb.png")
 
 We now told the server that we will be running an FTB mod on our server. However, there are multiple FTB modpacks and we need to specify which one should be running on the server.
 
@@ -35,7 +35,7 @@ Once you’ve found which modpack you want to install follow these steps:
 
 FTB Modpack that you wanted is now installed on the server!
 
-![FTB Search](images/78c08c96-8844-4812-8b38-2902559bf058.gif")
+![FTB Search](../images/78c08c96-8844-4812-8b38-2902559bf058.gif")
 
 Method 2 - Using the FTB Modpack ID
 -----------------------------------
@@ -53,4 +53,4 @@ In order to install a Modpack via its ID follow these steps:
 
 FTB Modpack that you wanted is now installed on the server!
 
-![FTB Modpack ID](images/eb88a081-7884-49fd-9d3f-0e970107e9f4.gif")
+![FTB Modpack ID](../images/eb88a081-7884-49fd-9d3f-0e970107e9f4.gif")
