@@ -16,56 +16,32 @@ XP1\_004 RushLarge0 2
 
 ### Maps
 
-**Engine name**
+**Engine name**		|		**Human Readable Name**
 
-**Human Readable Name**
+XP1\_001 		|		Strike At Karkand
 
-XP1\_001 
+XP1\_002 		|		Gulf of Oman
 
-Strike At Karkand
+XP1\_003			|		Sharqi Peninsula
 
-XP1\_002 
+XP1\_004 		|		Wake Island (Supports all modes besides ConquestSmall1)
 
-Gulf of Oman
-
-XP1\_003
-
-Sharqi Peninsula
-
-XP1\_004 
-
-Wake Island (Supports all modes besides ConquestSmall1)
 
 ### Game Modes
 
-**Game mode**
+**Game mode**		|		**Human Readable Name (Max player count)**
 
-**Human Readable Name (Max player count)**
+ConquestLarge0 |		Conquest (64)
 
-ConquestLarge0 
+ConquestSmall0		|		Conquest (32)
 
-Conquest (64)
+ConquestSmall1		|		Conquest Assault (32)
 
-ConquestSmall0
+RushLarge0			|		Rush (32)
 
-Conquest (32)
+SquadRush0			|		Squad Rush (8)
 
-ConquestSmall1
+SquadDeathMatch0	|		Squad Deathmatch (16)
 
-Conquest Assault (32)
+TeamDeathMatch0		|		Team Deathmatch (24)
 
-RushLarge0
-
-Rush (32)
-
-SquadRush0
-
-Squad Rush (8)
-
-SquadDeathMatch0
-
-Squad Deathmatch (16)
-
-TeamDeathMatch0
-
-Team Deathmatch (24)
