@@ -16,11 +16,11 @@ XP1\_004 RushLarge0 2
 
 ### Maps
 
-|**Engine name**|**Human Readable Name**|
-| ------------------------------------- |
-| XP1\_001		|      Strike At Karkand|
-|XP1\_002 		|		Gulf of Oman    |
-|XP1\_003		|		Sharqi Peninsula|
-|XP1\_004		|Wake Island (Supports all modes besides ConquestSmall1)|
+| **Engine Name** | **Human Readable Name**                                 |
+|-----------------|---------------------------------------------------------|
+| XP1_001         | Strike At Karkand                                       |
+| XP1_002         | Gulf of Oman                                            |
+| XP1_003         | Sharqi Peninsula                                        |
+| XP1_004         | Wake Island (Supports all modes besides ConquestSmall1) |
 
 
