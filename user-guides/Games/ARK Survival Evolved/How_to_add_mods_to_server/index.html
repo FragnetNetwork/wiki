@@ -1997,7 +1997,7 @@
 <p>First step in this process is downloading mods on your server. If you go to a game panel and select your service, you will see a list of tabs that represent different controls of the server. We are currently looking for mods, so head out to <strong>Steam Workshop</strong>.<br />
 You are now seeing a section with all the mods from Steam Workshop. To find a mod you want to install on the server, you can type it in a <strong>search box</strong>. After you found a mod you wanted, simply press on <strong>Install</strong> and the installation of the mod on your server will be issued. Depending on the mod size, it can take some time until the mod is installed, so we kindly ask you for a bit of patience.</p>
 <p><strong>Example:</strong></p>
-<p><img alt="Game Panel Steam Workshop" src="images/ARK_Mod_ss.png&quot;" /></p>
+<p><img alt="Game Panel Steam Workshop" src="../images/ARK_Mod_ss.png&quot;" /></p>
 <p><strong>Note:</strong> After every installation of a mod, it will appear in <strong>Steam Workshop (installed)</strong> section.</p>
 <h3 id="enabling-mods-on-the-server"><strong>Enabling Mods On The Server</strong></h3>
 <p>After installing the mods and before enabling the mods that are mentioned further in the text, make sure you either select the predefined custom commandline (Default + Mod Manager) or create a custom commandline and make sure that “Auto Managed Mods” option is enabled.<br />
@@ -2008,12 +2008,12 @@ You will be displayed a list of the configuration files on your server. You are 
 Find the line where it says <strong>ActiveMods</strong>. You will need to edit this now to be sure you are doing this correctly, please follow next steps.<br />
 Here in this line you will need to find ID’s of the mods you installed, so to do this you now need to go to <strong>Steam Workshop (installed)</strong> section and press on <strong>Details</strong> for every mod you want to enable.<br />
 You have been redirected to the official Steam Workshop page, and you can see the mod you installed. In the URL of that page you will see the following number as shown on this screenshot</p>
-<p><img alt="Steam Workshop" src="images/Ark_ss_2.png&quot;" /></p>
+<p><img alt="Steam Workshop" src="../images/Ark_ss_2.png&quot;" /></p>
 <p>Now you go back to the game panel where you are editing GameUserSettings.ini file and in the line of ActiveMods you add the following ID. Each ID should be separated by comma (,).</p>
 <p><strong>Example:</strong><br />
 <strong>ActiveMods=839162288,1681125667,1315573129</strong></p>
 <p><strong>Note:</strong> Some mods have dependencies, which means that they need another mod in order for it to work, so before you write the ID in ActiveMods please check if there is a Required Mods section on Steam Workshop. In case there is a required mod, be sure to install it first and add it in ActiveMods line before the one you wanted earlier.</p>
-<p><img alt="Required Mods" src="images/image3.png&quot;" /></p>
+<p><img alt="Required Mods" src="../images/image3.png&quot;" /></p>
 
   <hr>
 <div class="md-source-file">
