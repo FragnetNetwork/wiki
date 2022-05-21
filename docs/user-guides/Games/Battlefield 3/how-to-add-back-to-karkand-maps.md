@@ -23,4 +23,14 @@ XP1\_004 RushLarge0 2
 | XP1_003         | Sharqi Peninsula                                        |
 | XP1_004         | Wake Island (Supports all modes besides ConquestSmall1) |
 
+### Game Modes
 
+|  **Game Mode **  | **Human Readable Name (Max player count)** |
+|:----------------:|:------------------------------------------:|
+| ConquestLarge0   | Conquest (64)                              |
+| ConquestSmall0   | Conquest (32)                              |
+| ConquestSmall1   | Conquest Assault (32)                      |
+| RushLarge0       | Rush (32)                                  |
+| SquadRush0       | Squad Rush (8)                             |
+| SquadDeathMatch0 | Squad Deathmatch (16)                      |
+| TeamDeathMatch0  | Team Deathmatch (24)                       |

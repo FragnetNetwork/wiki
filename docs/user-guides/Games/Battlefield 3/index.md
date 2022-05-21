@@ -1,4 +1,4 @@
-# Battlefield 4 Guides
+# Battlefield 3 Guides
 
 > **_NOTE:_** Every client that has any Battlefield server hosted with us can have a free Procon Layer. In case you wish to obtain one, contact Fragnet support.
 
