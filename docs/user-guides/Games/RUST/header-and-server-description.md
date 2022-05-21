@@ -70,4 +70,4 @@ Testing...\\nStill testing...\\nHosted by Fragnet.net
 
 …will create the following description for the server, when viewed in the in-game listings:
 
-![Header](.../images/serverinfo.png)
+![Header](../images/serverinfo.png)

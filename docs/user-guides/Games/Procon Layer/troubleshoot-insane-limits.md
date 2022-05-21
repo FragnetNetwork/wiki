@@ -22,6 +22,6 @@ When you placed the content from the “old” file to a new config that should 
 Place the following line, with the correct (yours) IP of your Battlefield server and the RCON Port.  
 `” Plugins\BF4\InsaneLimits_IP_RCONPORT.conf ”`and press ENCODE.
 
-![InsaneLimits2](../imgaes/insanelimits2.png)
+![InsaneLimits2](../images/insanelimits2.png)
 
 Head back to _Configs/IP\_Port/InsaneLimits.cfg_ and change the BASE64 string to the one generated above. Save and restart the Procon layer. It should then no longer reset the limits set!
