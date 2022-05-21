@@ -5,7 +5,7 @@ GOTV can be enabled on every CS:GO server. GOTV allows you to watch a game curr
 There are 2 ways to enable GOTV on Fragnet servers:
 
 1.  Enable it via control panel by going to configuration files and editing server.cfg with "Configuration editor"  
-    ![](https://fragnet.atlassian.net/wiki/download/thumbnails/76022045/fragnetgotvoptions.png?version=2&modificationDate=1590679323186&cacheVersion=1&api=v2&height=150 "Knowledge base > CS:GO GOTV > fragnetgotvoptions.png")
+    ![](images/fragnetgotvoptions.png")
 2.  Manually adding the following commands to server.cfg:  
     
     tv\_enable "1"           //Enables GOTV
@@ -26,7 +26,7 @@ Server IP is : x.x.x.x:27015, GOTV will be x.x.x.x:37015
 
 You can check if your GOTV is working by simply writing the following command in your console (while you are on the server): **rcon status.** If everything is setuped correctly you'll have the following output
 
-![](https://fragnet.atlassian.net/wiki/download/thumbnails/76022045/fragnetgotv.png?version=1&modificationDate=1590682072655&cacheVersion=1&api=v2&height=183 "Knowledge base > CS:GO GOTV > fragnetgotv.png")
+![](images/fragnetgotv.png")
 
 ### Demos
 

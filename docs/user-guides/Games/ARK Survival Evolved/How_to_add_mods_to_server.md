@@ -12,7 +12,7 @@ You are now seeing a section with all the mods from Steam Workshop. To find a mo
 
 **Example:**
 
-![](https://fragnet.atlassian.net/wiki/download/attachments/401670174/image-20220312-163059.png?version=1&modificationDate=1647431005724&cacheVersion=1&api=v2 "Knowledge base > How to add mods to your server > image-20220312-163059.png")
+![](images/ARK_Mod_ss.png")
 
 **Note:** After every installation of a mod, it will appear in **Steam Workshop (installed)** section.
 
@@ -28,7 +28,7 @@ Find the line where it says **ActiveMods**. You will need to edit this now to be
 Here in this line you will need to find ID’s of the mods you installed, so to do this you now need to go to **Steam Workshop (installed)** section and press on **Details** for every mod you want to enable.  
 You have been redirected to the official Steam Workshop page, and you can see the mod you installed. In the URL of that page you will see the following number as shown on this screenshot
 
-![](https://fragnet.atlassian.net/wiki/download/attachments/401670174/image-20220312-171730.png?version=1&modificationDate=1647431005730&cacheVersion=1&api=v2 "Knowledge base > How to add mods to your server > image-20220312-171730.png")
+![](images/Ark_ss_2.png")
 
 Now you go back to the game panel where you are editing GameUserSettings.ini file and in the line of ActiveMods you add the following ID. Each ID should be separated by comma (,).
 
@@ -37,4 +37,4 @@ Now you go back to the game panel where you are editing GameUserSettings.ini fil
 
 **Note:** Some mods have dependencies, which means that they need another mod in order for it to work, so before you write the ID in ActiveMods please check if there is a Required Mods section on Steam Workshop. In case there is a required mod, be sure to install it first and add it in ActiveMods line before the one you wanted earlier.
 
-![](https://fragnet.atlassian.net/wiki/download/attachments/401670174/image-20220312-175003.png?version=1&modificationDate=1647431005744&cacheVersion=1&api=v2 "Knowledge base > How to add mods to your server > image-20220312-175003.png")
+![](images/image3.png")

@@ -18,7 +18,7 @@ You can follow these steps to access and manage your server files using FTP :
 
 Use those credentials to fill in the field in your FTP client then click on "quick connect"
 
-![](https://fragnet.atlassian.net/wiki/download/thumbnails/394788948/FTP1.png?version=1&modificationDate=1637529466082&cacheVersion=1&api=v2&height=38 "Knowledge base > How to manage your Farming Simulator 22 server files using FTP (File transfer protocol) > FTP1.png")
+![FTP](images/FTP1.png")
 
 Be careful when you type this information as you may get a 5 minutes ban if you attempt to login with the wrong credentials repeatedly. In that situation, simply disconnect and wait 5 minutes before trying again
 
@@ -32,6 +32,6 @@ FTP is particularly useful for backing up your server files, or uploading plugi
 Once connected to your FTP account, server files will be listed on the right side of the screen, whilst your computer's files will be listed on the left side.  
 You can upload, download, and move files from your computer to your server and vice versa, as well as within the server's folders.  
   
-![](https://fragnet.atlassian.net/wiki/download/thumbnails/394788948/FTP2.png?version=1&modificationDate=1637529466032&cacheVersion=1&api=v2&height=250 "Knowledge base > How to manage your Farming Simulator 22 server files using FTP (File transfer protocol) > FTP2.png")  
+![FTP2](images/FTP2.png")  
   
 Alternatively, you may right click on the relevant file or folder and hit the "Download" or "Upload" button.

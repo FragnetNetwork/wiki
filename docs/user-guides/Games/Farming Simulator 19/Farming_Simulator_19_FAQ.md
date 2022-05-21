@@ -29,11 +29,11 @@ Common problems with mods and save games
 
 ### Uploaded savegame not supported. Only Farming Simulator 19 savegames are supported
 
-Most likely you are trying to upload the wrong file structure. Save games can only be uploaded as .zip archive and that .zip should contain all the contents from the savegame folder. Refer to the following article in order to properly zip and upload the save game. [Uploading your local Farming Simulator 19 save game](https://kb.fragnet.net/index/Uploading-your-local-Farming-Simulator-19-save-game.76022255.html)
+Most likely you are trying to upload the wrong file structure. Save games can only be uploaded as .zip archive and that .zip should contain all the contents from the savegame folder. Refer to the following article in order to properly zip and upload the save game.
 
 ### I'm not able to upload my mod
 
-You are either uploading the mod in the incorrect format or you have maxed out your Mod Space. Check if you are uploading the mod correctly by refering to the following article [How to manage your Farming Simulator 19 server files using FTP (File transfer protocol)](https://kb.fragnet.net/index/How-to-manage-your-server-files-using-FTP-(File-transfer-protocol).76022311.html)
+You are either uploading the mod in the incorrect format or you have maxed out your Mod Space. Check if you are uploading the mod correctly by refering to the following article [How to manage your Farming Simulator 19 server files using FTP.
 
 ### Stuck on Sync data with other players
 

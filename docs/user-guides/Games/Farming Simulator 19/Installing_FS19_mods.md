@@ -12,7 +12,7 @@ Automatic installation
 
 To manage the mods on the automatic download feature, simply click the download button to start the download of the desired mod
 
-![](https://fragnet.atlassian.net/wiki/download/thumbnails/76022258/mods1.png?version=1&modificationDate=1598371402102&cacheVersion=1&api=v2&width=800 "Knowledge base > Mods > mods1.png")
+![mods1](images/mods1.png")
 
 Mods that are found here are directly managed by Giants, so the version of the mods should always be up to date. 
 

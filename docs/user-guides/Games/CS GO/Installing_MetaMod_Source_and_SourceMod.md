@@ -6,7 +6,7 @@ Follow these steps:
 2.  Open your CSGO service
 3.  Click the "Mod Manager" button. Once in the mod manager, install the "SourceMod" and "MetaMod: Source" mods. Once ready it will say "installed" next to the mod in the list.
 
-![](https://fragnet.atlassian.net/wiki/download/thumbnails/76022365/sourcemod.gif?version=1&modificationDate=1598796008197&cacheVersion=1&api=v2&height=250 "Knowledge base > Installing MetaMod: Source and SourceMod > sourcemod.gif")
+![](images/sourcemod.gif")
 
 This should only be used for installing the SourceMod and Metamod. If you want to update the SourceMod, you should do it manually and with extra caution, since this type of installation will overwrite all of the configuration files!!
 
