@@ -1,11 +1,10 @@
-#How to add admins to your RUST server
+# How to add admins to your RUST server
 
 Admin access on a Rust server allows a player to execute all Rust commands in-game. This is important since it gives you access to the commands for keeping your server clean from the players violating your rules, but to many other things such as teleporting, spawning items and more!
 
 A full list of Rust server commands can be found [here](http://rust.wikia.com/wiki/Server_Commands).
 
-Adding admins via configuration file
-------------------------------------
+## Adding admins via configuration file
 
 There are two admin user roles on a Rust server:
 
@@ -32,8 +31,7 @@ To add an admin via configuration file on your server follow these few steps:
     
 *   After adding users to the "**users.cfg**" file, click "**Save**" and then restart your Rust server.
 
-Adding admins via RCON
-----------------------
+## Adding admins via RCON
 
 Admins/moderators can also be added via RCON console.
 
