@@ -7,7 +7,7 @@ Upgrade options
 To be able to check which upgrade options are available for your server you first need to navigate to your : [Services](https://clients.fragnet.net/clientarea.php?action=services)  
   
 Once you are in there, click on your active Farming Simulator 19 Server.  
-![upgrade](../images/updgrade1.png)
+![upgrade](../images/upgrade1.png)
 
 When you opened your Farming Simulator 19 Server page, you will have an "Actions" menu on the left side of the page. Press the "Upgrade/Downgrade Options" button.  
 ![upgrade2](../images/upgrade2.png)

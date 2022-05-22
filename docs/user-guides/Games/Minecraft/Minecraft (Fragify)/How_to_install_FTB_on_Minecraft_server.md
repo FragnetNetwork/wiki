@@ -9,7 +9,7 @@ This can be done by the following:
 *   Locate the “Feed the Beast” and press “Install”
     
 
-![Feed The Beast](../images/9c7dffa4-6b5a-40f4-824e-81dadc8163cb.png")
+![Feed The Beast](../images/9c7dffa4-6b5a-40f4-824e-81dadc8163cb.png)
 
 We now told the server that we will be running an FTB mod on our server. However, there are multiple FTB modpacks and we need to specify which one should be running on the server.
 

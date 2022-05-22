@@ -5,7 +5,7 @@ In order to host Steam Workshop Maps easily on your servers, there are some thin
 
 To authenticate any requests from the server to the Steam Workshop, we need the API Key. This can be easily created on official Steam website: [API key request](https://steamcommunity.com/dev/registerkey).  
 Simply go to the website, fill in the Domain Name, agree to Steam Web API Terms of Use and press Register.  
-![Steam API](./images/fragnetapiregister.png)  
+![SteamAPI](../images/fragnetapiregister.png)  
 
   
 
