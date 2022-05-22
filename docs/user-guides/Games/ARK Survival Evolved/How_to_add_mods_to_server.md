@@ -14,7 +14,7 @@ You are now seeing a section with all the mods from Steam Workshop. To find a mo
 
 ![Game Panel Steam Workshop](../images/ARK_Mod_ss.png)
 
-**Note:** After every installation of a mod, it will appear in **Steam Workshop (installed)** section.
+> **_NOTE:_** After every installation of a mod, it will appear in **Steam Workshop (installed)** section.
 
 ### **Enabling Mods On The Server**
 
@@ -28,13 +28,13 @@ Find the line where it says **ActiveMods**. You will need to edit this now to be
 Here in this line you will need to find ID’s of the mods you installed, so to do this you now need to go to **Steam Workshop (installed)** section and press on **Details** for every mod you want to enable.  
 You have been redirected to the official Steam Workshop page, and you can see the mod you installed. In the URL of that page you will see the following number as shown on this screenshot
 
-![Steam Workshop](../images/Ark_ss_2.png")
+![Steam Workshop](../images/Ark_ss_2.png)
 
 Now you go back to the game panel where you are editing GameUserSettings.ini file and in the line of ActiveMods you add the following ID. Each ID should be separated by comma (,).
 
 **Example:**  
 **ActiveMods=839162288,1681125667,1315573129**
 
-**Note:** Some mods have dependencies, which means that they need another mod in order for it to work, so before you write the ID in ActiveMods please check if there is a Required Mods section on Steam Workshop. In case there is a required mod, be sure to install it first and add it in ActiveMods line before the one you wanted earlier.
+> Some mods have dependencies, which means that they need another mod in order for it to work, so before you write the ID in ActiveMods please check if there is a Required Mods section on Steam Workshop. In case there is a required mod, be sure to install it first and add it in ActiveMods line before the one you wanted earlier.
 
-![Required Mods](../images/image3.png")
+![Required Mods](../images/image3.png)

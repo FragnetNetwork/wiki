@@ -26,7 +26,7 @@ Server IP is : x.x.x.x:27015, GOTV will be x.x.x.x:37015
 
 You can check if your GOTV is working by simply writing the following command in your console (while you are on the server): **rcon status.** If everything is setuped correctly you'll have the following output
 
-![GOTV status](../images/fragnetgotv.png")
+![GOTV status](../images/fragnetgotv.png)
 
 ### Demos
 

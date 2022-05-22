@@ -15,8 +15,8 @@ Every line contains a detailed explanation.
 **Step 4:** Save the file and exit  
 **Step 5:** Restart the server
 
-Keep in mind that when generating an RWG world, the value needs to be between 2048 and 16384.  
-When setting the higher value, the server will start generating a large map size, which will take long to generate / download / load the map.
+> Keep in mind that when generating an RWG world, the value needs to be between 2048 and 16384.  
+> When setting the higher value, the server will start generating a large map size, which will take long to generate / download / load the map.
 
 ### Create a new world but delete the old one
 
