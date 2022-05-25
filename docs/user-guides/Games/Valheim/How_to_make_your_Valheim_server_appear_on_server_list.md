@@ -10,6 +10,7 @@ This can be easily enabled by following the next steps.
 3.  Save the commandline and restart your server.
     
 
-> **_NOTE:_**  Keep in mind that Valheim has some limitation with the in-game server browser, so even the servers that could appear on the list may not, due to there being too many servers to show.
+!!! info "INFO"
+	Keep in mind that Valheim has some limitation with the in-game server browser, so even the servers that could appear on the list may not, due to there being too many servers to show.
 
 Because of this, we don’t recommend connecting to your server via the server listings, as this is an unreliable way of finding your server. 

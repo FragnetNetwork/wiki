@@ -62,7 +62,8 @@ Here are map names for maplist.txt and their correspondence in BattleLog.
 ### Game Modes and slots
 --------------------
 
-> **_NOTE:_** Depending on the map size and game mode the game server slots can be limited to a lower value
+!!! info "INFO"
+	Depending on the map size and game mode the game server slots can be limited to a lower value
 
 |  **Engine name** | **Human-readable name** | **Slots** |
 |:----------------:|:-----------------------:|-----------|
@@ -73,4 +74,5 @@ Here are map names for maplist.txt and their correspondence in BattleLog.
 | SquadDeathMatch0 | Squad Deathmatch        | Up to 16  |
 | TeamDeathMatch0  | Team Deathmatch         | Up to 32  |
 
-Note that the lower slots count limit from your map rotation will apply to your server to not kick players on map change.
+!!! info "INFO"
+	Note that the lower slots count limit from your map rotation will apply to your server to not kick players on map change.

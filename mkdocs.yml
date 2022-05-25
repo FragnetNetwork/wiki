@@ -49,3 +49,7 @@ extra:
   gp_domain: "gamepanel.fragnet.net"
   gp2: "Fragify"
   gp2_domain: "panel.fragify.net"
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences

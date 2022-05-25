@@ -4,7 +4,8 @@ Connecting via Server Browser
 =============================
 
   
-> **_NOTE:_** GSLT Token needs to be set in server.cfg for this. Create a token [here](https://steamcommunity.com/dev/managegameservers) with app ID: 242760 and insert the token under "serverSteamAccount" in your server.cfg
+!!! info "INFO"
+	GSLT Token needs to be set in server.cfg for this. Create a token [here](https://steamcommunity.com/dev/managegameservers) with app ID: 242760 and insert the token under "serverSteamAccount" in your server.cfg
 
   
 Once you add your GSLT token in server.cfg, your server should be accessible via server browser. 

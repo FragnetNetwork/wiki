@@ -2,7 +2,8 @@
 
 Rust:IO is a Rust Oxide extension, which adds a fully interactive browser live map of your Rust world. This map allows you to see player locations, buildings, and more. 
 
-> **_NOTE:_** Server should be stopped before installing Rust:IO!
+!!! info "INFO"
+	Server should be stopped before installing Rust:IO!
 
 Adding Rust:IO to your server:
 

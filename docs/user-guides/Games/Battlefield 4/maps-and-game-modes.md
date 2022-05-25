@@ -36,7 +36,8 @@ These are the different game modes which are available for the Battlefield 4 PC 
 | SquadObliteration0 | Squad Obliteration*     | Up to 10 + (4)                                        |
 | GunMaster0         | Gun Master              | Up to 20 + (4)                                        |
 
-> **_NOTE:_** Squad Obliteration is only available for the following maps: MP\_Siege; MP\_Abandoned; MP\_Resort; MP\_Tremors; MP\_Navals; MP\_Journey; MP\_Prison.
+!!! info "INFO"
+	Squad Obliteration is only available for the following maps: MP\_Siege; MP\_Abandoned; MP\_Resort; MP\_Tremors; MP\_Navals; MP\_Journey; MP\_Prison.
 
 
 ### China Rising Game Maps and Modes

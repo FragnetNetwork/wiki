@@ -51,7 +51,8 @@ This can be easily done on your Fragnet Game panel by following these steps:
     ![Commandline Manager](../images/fragnetauthe.png)
 4.  Restart your server
 
-> **_NOTE:_**  Keep in mind for step 3, apart from filling in those details, you still need to enable and fill the lines such as game\_type and game\_mode otherwise server will not start!
+!!! info "INFO"
+    Keep in mind for step 3, apart from filling in those details, you still need to enable and fill the lines such as game\_type and game\_mode otherwise server will not start!
 
   
 

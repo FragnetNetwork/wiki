@@ -16,4 +16,5 @@ It is possible to have a custom map on the RUST Server apart from the original o
 
 You have now successfully added a custom map to your RUST server!
 
-> **_NOTE:_** If you are just trying to load a custom map that is already uploaded by a third party, you should start from step 3.
+!!! info "INFO"
+    If you are just trying to load a custom map that is already uploaded by a third party, you should start from step 3.

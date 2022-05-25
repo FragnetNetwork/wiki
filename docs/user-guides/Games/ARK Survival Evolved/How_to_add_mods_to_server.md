@@ -14,7 +14,8 @@ You are now seeing a section with all the mods from Steam Workshop. To find a mo
 
 ![Game Panel Steam Workshop](../images/ARK_Mod_ss.png)
 
-> **_NOTE:_** After every installation of a mod, it will appear in **Steam Workshop (installed)** section.
+!!! info "INFO"
+	After every installation of a mod, it will appear in **Steam Workshop (installed)** section.
 
 ### **Enabling Mods On The Server**
 
@@ -35,6 +36,7 @@ Now you go back to the game panel where you are editing GameUserSettings.ini fil
 **Example:**  
 **ActiveMods=839162288,1681125667,1315573129**
 
-> Some mods have dependencies, which means that they need another mod in order for it to work, so before you write the ID in ActiveMods please check if there is a Required Mods section on Steam Workshop. In case there is a required mod, be sure to install it first and add it in ActiveMods line before the one you wanted earlier.
+!!! info "INFO"
+	Some mods have dependencies, which means that they need another mod in order for it to work, so before you write the ID in ActiveMods please check if there is a Required Mods section on Steam Workshop. In case there is a required mod, be sure to install it first and add it in ActiveMods line before the one you wanted earlier.
 
 ![Required Mods](../images/image3.png)

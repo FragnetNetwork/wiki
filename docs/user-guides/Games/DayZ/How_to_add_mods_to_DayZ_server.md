@@ -35,7 +35,9 @@ If you don’t have the mod named here installed you will first need to install 
 ![URL ID](../images/image-20220322-130721.png)
 
 Mods are listed in the commandline like shown here, always start with @ and end with ; except the last one
-> **EXAMPLE:_** @1559212036;@1590841260;@1646187754
+
+!!! info "EXAMPLE"
+	@1559212036;@1590841260;@1646187754
 
 **Step 7:** After you successfully written all of the mods in the command line press **Save** and restart the server  
 **Step 8:** Mods should now run properly on the server
