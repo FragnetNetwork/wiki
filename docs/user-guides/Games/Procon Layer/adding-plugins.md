@@ -7,7 +7,7 @@ Uploading plugins to the Procon Layer
 
 Once you find and download a plugin to your PC, you need to upload it to the Procon Layer.  
 This can be done in 2 ways, by using a File Manager on the game panel or using an FTP.  
-In case you need help on how to manage your server files via FTP, please refer to this article: [How to manage your server files using FTP (File transfer protocol)](/wiki/spaces/KB/pages/76022311)
+In case you need help on how to manage your server files via FTP, please refer to this article: [How to manage your server files using FTP (File transfer protocol)](/user-guides/FAQ/Manage-server-files-via-ftp/)
 
 Every plugin should have installation instructions on their respected page.  
 Generally it's just placing the files from the .zip archive in the correct place.
