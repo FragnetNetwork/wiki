@@ -1,7 +1,7 @@
 This will be a long in-depth guide that shows you how to correctly add mods to your server.  
-Before you proceed following the next steps just in case something goes wrong it will be good if you have a backup. To create a backup you can use this article on our knowledge base: [How to create a backup for Dayz server](/wiki/spaces/KB/pages/402948112/How+to+make+a+backup+of+your+DayZ+server)
+Before you proceed following the next steps just in case something goes wrong it will be good if you have a backup. To create a backup you can use this article on our knowledge base: [How to create a backup for Dayz server](/user-guides/Games/DayZ/How_to_make_a_backup_for_DayZ_server/)
 
-Great, now that you created a backup let’s focus on getting everything ready for mods. You will first need to follow again one of our guides on [how to create a custom commandline for DayZ server](/wiki/spaces/KB/pages/402948121/Create+a+custom+commandline+for+the+DayZ+server).
+Great, now that you created a backup let’s focus on getting everything ready for mods. You will first need to follow again one of our guides on [how to create a custom commandline for DayZ server](/user-guides/Games/DayZ/Create_a_custom_commandline_for_DayZ_server/).
 
 ### How to install mods on your server
 
