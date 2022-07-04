@@ -1,6 +1,7 @@
 INHERIT: mkdocs.yml
 plugins:
   - search
-  - social
   - tags
-  - navigation.prune
+  - git-committers:
+      repository: fragnetnetwork/wiki
+      token: !ENV MKDOCS_TOKEN
