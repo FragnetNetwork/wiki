@@ -43,6 +43,7 @@ jobs:
             "mkdocs-awesome-pages-plugin>=2.7.0" \
             "mkdocs-htmlproofer-plugin>=0.7.0" \
             "mkdocs-git-authors-plugin>=0.6.4" \
+            "mkdocs-git-committers-plugin-2>=0.4.3" \
             "mkdocs-redirects>=1.0"
       - name: Install Insiders build
         env:
@@ -50,6 +51,9 @@ jobs:
         run: |
           git clone --depth 1 https://${MKDOCS_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
           pip install -e mkdocs-material-insiders
+          cp theme/assets/logo.png mkdocs-material-insiders/material/assets/
+          cp theme/assets/stylesheets/custom.css mkdocs-material-insiders/material/assets/
+          cp theme/assets/favicon.ico mkdocs-material-insiders/material/assets/
           echo "THEME_DIR=mkdocs-material-insiders/material" >> $GITHUB_ENV
       - name: Deploy documentation
         run: |
