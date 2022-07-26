@@ -36,3 +36,4 @@ An in-depth steps to configure your DayZ server.
 | **[How to add mods to DayZ server](How_to_add_mods_to_DayZ_server.md)**                                         |
 | **[How to make a backup for DayZ server](How_to_make_a_backup_for_DayZ_server.md)**                             |
 | **[How to wipe DayZ server](How_to_wipe_DayZ_server.md)**                                                       |
+| **[How to increase item spawns on your map](dayz-how-to-increase-item-spawns.md)**                              |
