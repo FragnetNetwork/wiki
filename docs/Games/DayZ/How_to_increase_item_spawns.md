@@ -45,13 +45,14 @@ firstly, you have to know what you would like to change. In this guide, we are g
 
 2. When you have found the shovel item, it would be looking something like this.
 
-![Example Item](../images/itemshovel.png)
+![Example Item](../images/item-shovel.png)
 
 3. As we have explained above in the first section on what each line of
 text means, it would mean that we have to edit the "min" option.
 
 4. Once changed to your desired needs, hit the save button. 
 
-Go back toyour game panel and restart your server. Success! You just changed the amount of spawns on your server for the shovel! You should be good to go.
+Go back to our game panel and restart your server. 
+Success! You just changed the amount of spawns on your server for the shovel! You should be good to go.
 
 If there would be any questions, we are happy to help you out on our official discord channel!
