@@ -47,6 +47,7 @@ Here you can find articles about our Games:
 - **[Don't Starve Together](../Games/Don't Starve Together/)**
 - **[Farming Simulator 19](../Games/Farming Simulator 19/)**
 - **[Farming Simulator 22](../Games/Farming Simulator 22/)** 
+- **[Left 4 Dead 2](../Games/Left 4 Dead 2/)**
 - **[Minecraft](../Games/Minecraft/)**            
 - **[Procon Layer](../Games/Procon Layer/)**                 
 - **[Project Zomboid](../Games/Project Zomboid/)**
