@@ -6,13 +6,13 @@ If you wish to have a server that's available to that option, follow these steps
 
 2. Navigate to File Manager.
 
-![](images/file-manager.png)
+![](../images/file-manager.png)
 
 3. Go to ```left4dead2  /cfg / server.cfg```.
 
 4. Once there, go to line 31 in the server.cfg `sv_steamgroup_exclusive 0` and set it to 1 at the end looking like this: `sv_steamgroup_exclusive 1`.
 
-![](images/steamgroup.png)
+![](../images/steamgroup.png)
 
 5. Once edited, press **Save Content** located in the lower right section of the window.
 

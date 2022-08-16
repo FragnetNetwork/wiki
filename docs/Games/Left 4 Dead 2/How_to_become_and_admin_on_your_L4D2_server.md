@@ -1,6 +1,6 @@
 1. Firstly, navigate to your **File Manager**. 
 
-![File Manager](images/file-manager.png)
+![File Manager](../images/file-manager.png)
 
 2. Then go to `left4dead2 => addons => sourcemod => configs => admins.cfg`.
 
@@ -48,6 +48,6 @@ Admins
 }
 ```
 
-![](images/example-admin.png)
+![](../images/example-admin.png)
 
 5. Once done, click on **Save Content** and Start/Restart your server.

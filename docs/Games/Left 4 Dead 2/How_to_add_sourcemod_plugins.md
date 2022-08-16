@@ -8,11 +8,11 @@
 
 3. Once you have chosen and downloaded the wanted plugin navigate to your **File Manager**, go to `left4dead2 => addons => sourcemod => plugins`.
 
-![File Manager](images/file-manager.png)
+![File Manager](../images/file-manager.png)
 
 4. Then upload the plugin in that directory by clicking on upload or just drag and dropping the file.
 
-![](images/upload-plugin.png)
+![](../images/upload-plugin.png)
 
 5. Once it has been uploaded, Start/Restart your server, and it has been installed.
 

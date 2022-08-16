@@ -8,10 +8,10 @@ Changing/Setting the RCON password:
 
 2. Click on the **Settings** tab and scroll down till the **RCON PASSWORD** window.
 
-![Settings](images/settings.png)
+![Settings](../images/settings.png)
 
 3. Change/Set the RCON password to any you want, and that’s it.
 
-![RCON PASSWORD](images/rcon-password.png)
+![RCON PASSWORD](../images/rcon-password.png)
 
 Removing the RCON password requires that the field in the **RCON PASSWORD** window is blank.
