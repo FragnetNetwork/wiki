@@ -1,0 +1,5350 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        
+      
+      <link rel="icon" href="../../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.0+insiders-4.21.1">
+    
+    
+      
+        <title>How to add sourcemod plugins - Fragnet Public Wiki (Beta)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7b6e63fb.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Fragnet Public Wiki (Beta)" class="md-header__button md-logo" aria-label="Fragnet Public Wiki (Beta)" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Fragnet Public Wiki (Beta)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              How to add sourcemod plugins
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/FragnetNetwork/wiki" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    FragnetNetwork/wiki
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+
+
+
+
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+
+
+
+
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Billing/" class="md-tabs__link">
+          
+  
+    
+  
+  Billing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+
+
+
+
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Discord-Bots/" class="md-tabs__link">
+          
+  
+    
+  
+  Discord Bots
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+
+
+
+
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../FAQ/" class="md-tabs__link">
+          
+  
+    
+  
+  FAQ
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+
+  
+
+
+
+
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link md-tabs__link--active">
+          
+  
+    
+  
+  Games
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+
+
+
+
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Troubleshooting/" class="md-tabs__link">
+          
+  
+    
+  
+  Troubleshooting
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Fragnet Public Wiki (Beta)" class="md-nav__button md-logo" aria-label="Fragnet Public Wiki (Beta)" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    Fragnet Public Wiki (Beta)
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/FragnetNetwork/wiki" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    FragnetNetwork/wiki
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../Billing/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Billing
+  </span>
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_2">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" aria-label="Billing" data-md-level="1">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Billing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Billing/Affiliates-custom-URL-codes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Affiliates custom URL codes
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Billing/Affiliates-earn-money-advertising-for-us/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Affiliates earn money advertising for us
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Billing/How-do-I-cancel-my-service/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How do I cancel my service
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Billing/What-forms-of-payment-does-Fragnet-accept/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    What forms of payment does Fragnet accept
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Billing/Why-am-I-receiving-an-invoice-before-my-one-month-is-over/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Why am I receiving an invoice before my one month is over
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Billing/You-charged-me-even-after-I-cancelled/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    You charged me even after I cancelled
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Billing/order-additional-services/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How do I order additional services?
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Billing/renew-service/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How do I renew my services?
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Billing/subscription-period/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    For how long do I have to sign up?
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+
+
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../Discord-Bots/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Discord Bots
+  </span>
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" aria-label="Discord Bots" data-md-level="1">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Discord Bots
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+
+
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../FAQ/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_4">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" aria-label="FAQ" data-md-level="1">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            FAQ
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../FAQ/How-do-I-upgrade-downgrade-my-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How do I upgrade downgrade my server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../FAQ/Manage-server-files-via-ftp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manage server files via ftp
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../FAQ/change-server-location/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transfering your server to another location
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../FAQ/setup-time/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How fast will my server be setup?
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+
+
+  
+  
+    
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+        
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Games
+  </span>
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" aria-label="Games" data-md-level="1">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Games
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" type="checkbox" id="__nav_5_2" >
+        
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../7%20Days%20To%20Die/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    7 Days To Die
+  </span>
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_2">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" aria-label="7 Days To Die" data-md-level="2">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            7 Days To Die
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7%20Days%20To%20Die/Adding_mods_to_your_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adding mods to your server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7%20Days%20To%20Die/How_to_add_admin_on_your_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to add admin on your server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7%20Days%20To%20Die/How_to_change_name_of_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to change name of server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7%20Days%20To%20Die/How_to_create_world/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to create world
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7%20Days%20To%20Die/How_to_edit_configuration_files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to edit configuration files
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2_7" type="checkbox" id="__nav_5_2_7" >
+        
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../7%20Days%20To%20Die/adding-mods/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Adding mods
+  </span>
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" aria-label="Adding mods" data-md-level="3">
+          <label class="md-nav__title" for="__nav_5_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            Adding mods
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" >
+        
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ARK%20Survival%20Evolved/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    ARK Survival Evolved
+  </span>
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_3">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" aria-label="ARK Survival Evolved" data-md-level="2">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            ARK Survival Evolved
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ARK%20Survival%20Evolved/How_to_add_admin_password/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to add admin password
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ARK%20Survival%20Evolved/How_to_add_mods_to_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to add mods to server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ARK%20Survival%20Evolved/How_to_change_name_of_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to change name of server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ARK%20Survival%20Evolved/How_to_change_server_map/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to change server map
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ARK%20Survival%20Evolved/How_to_connect_to_the_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to connect to the server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ARK%20Survival%20Evolved/How_to_give_a_player_admin_privileges/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to give a player admin privileges
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" >
+        
+        
+          <label class="md-nav__link" for="__nav_5_4">
+            
+  
+  <span class="md-ellipsis">
+    Arma Reforger
+  </span>
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" aria-label="Arma Reforger" data-md-level="2">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            Arma Reforger
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Arma%20Reforger/How_to_add_mods_and_scenarios_to_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to add mods and scenarios to server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Arma%20Reforger/How_to_change_server_name_and_add_password/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to change server name and add password
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_5" type="checkbox" id="__nav_5_5" >
+        
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Battlefield%203/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Battlefield 3
+  </span>
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_5">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" aria-label="Battlefield 3" data-md-level="2">
+          <label class="md-nav__title" for="__nav_5_5">
+            <span class="md-nav__icon md-icon"></span>
+            Battlefield 3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Battlefield%203/bf3-admin-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bf3 admin guide
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Battlefield%203/how-to-add-back-to-karkand-maps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to add back to karkand maps
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Battlefield%203/maps-game-modes-and-slots-limitations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Maps game modes and slots limitations
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6" type="checkbox" id="__nav_5_6" >
+        
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Battlefield%204/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Battlefield 4
+  </span>
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_6">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" aria-label="Battlefield 4" data-md-level="2">
+          <label class="md-nav__title" for="__nav_5_6">
+            <span class="md-nav__icon md-icon"></span>
+            Battlefield 4
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Battlefield%204/game-queue-VIP-reserved-slots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    game queue VIP reserved slots
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Battlefield%204/map-handling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Map handling
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Battlefield%204/maps-and-game-modes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Maps and game modes
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Battlefield%204/player-slots/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Player slots
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Battlefield%204/warm-up-and-pre-round/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Warm up and pre round
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_7" type="checkbox" id="__nav_5_7" >
+        
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../CS%20GO/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    CS GO
+  </span>
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_7">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" aria-label="CS GO" data-md-level="2">
+          <label class="md-nav__title" for="__nav_5_7">
+            <span class="md-nav__icon md-icon"></span>
+            CS GO
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CS%20GO/CSGO_GOTV/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSGO GOTV
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CS%20GO/CSGO_RCON_commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSGO RCON commands
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CS%20GO/CSGO_Workshop_Maps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CSGO Workshop Maps
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CS%20GO/How_do_I_find_Steam_ID/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How do I find Steam ID
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CS%20GO/How_do_I_make_myself_an_administrator_in_SourceMod/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How do I make myself an administrator in SourceMod
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CS%20GO/Installing_MetaMod_Source_and_SourceMod/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installing MetaMod Source and SourceMod
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_8" type="checkbox" id="__nav_5_8" >
+        
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Conan%20Exiles/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Conan Exiles
+  </span>
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_8">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" aria-label="Conan Exiles" data-md-level="2">
+          <label class="md-nav__title" for="__nav_5_8">
+            <span class="md-nav__icon md-icon"></span>
+            Conan Exiles
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Conan%20Exiles/Adding_mods_to_your_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adding mods to your server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Conan%20Exiles/Admin_commands_and_configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Admin commands and configuration
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Conan%20Exiles/How_to_connect_to_your_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to connect to your server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Conan%20Exiles/How_to_set_server_name/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to set server name
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Conan%20Exiles/Setting_up_RCON_for_Conan_Exiles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting up RCON for Conan Exiles
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_9" type="checkbox" id="__nav_5_9" >
+        
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../DayZ/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    DayZ
+  </span>
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_9">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" aria-label="DayZ" data-md-level="2">
+          <label class="md-nav__title" for="__nav_5_9">
+            <span class="md-nav__icon md-icon"></span>
+            DayZ
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DayZ/Adjust_configuration_files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adjust configuration files
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DayZ/Create_a_custom_commandline_for_DayZ_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create a custom commandline for DayZ server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DayZ/How_to_add_mods_to_DayZ_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to add mods to DayZ server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DayZ/How_to_increase_item_spawns/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to increase item spawns
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DayZ/How_to_make_a_backup_for_DayZ_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to make a backup for DayZ server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DayZ/How_to_wipe_DayZ_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to wipe DayZ server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_10" type="checkbox" id="__nav_5_10" >
+        
+        
+          <label class="md-nav__link" for="__nav_5_10">
+            
+  
+  <span class="md-ellipsis">
+    Don't Starve Together
+  </span>
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" aria-label="Don't Starve Together" data-md-level="2">
+          <label class="md-nav__title" for="__nav_5_10">
+            <span class="md-nav__icon md-icon"></span>
+            Don't Starve Together
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Don%27t%20Starve%20Together/Adding_mods_to_your_Don%27t_Starve_Together_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adding mods to your Don't Starve Together server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Don%27t%20Starve%20Together/How_to_add_a_password_on_your_Don%27t_Starve_Together_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to add a password on your Don't Starve Together server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Don%27t%20Starve%20Together/How_to_add_admins_to_your_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to add admins to your server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Don%27t%20Starve%20Together/How_to_ban_players_on_your_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to ban players on your server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Don%27t%20Starve%20Together/How_to_create_reserved_slots_%28whitelist%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to create reserved slots (whitelist)
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Don%27t%20Starve%20Together/How_to_enable_and_disable_PvP_on_your_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to enable and disable PvP on your server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Don%27t%20Starve%20Together/Server_console_and_console_commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Server console and console commands
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_11" type="checkbox" id="__nav_5_11" >
+        
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Farming%20Simulator%2019/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Farming Simulator 19
+  </span>
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_11">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" aria-label="Farming Simulator 19" data-md-level="2">
+          <label class="md-nav__title" for="__nav_5_11">
+            <span class="md-nav__icon md-icon"></span>
+            Farming Simulator 19
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Farming%20Simulator%2019/Farming_Simulator_19_FAQ/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Farming Simulator 19 FAQ
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Farming%20Simulator%2019/Farming_Simulator_19_Upgrading_your_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Farming Simulator 19 Upgrading your server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Farming%20Simulator%2019/How_to_manage_your_FS19_files_using_FTP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to manage your FS19 files using FTP
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Farming%20Simulator%2019/Installing_FS19_mods/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installing FS19 mods
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Farming%20Simulator%2019/Uploading_your_local_FS19_save_file/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Uploading your local FS19 save file
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_12" type="checkbox" id="__nav_5_12" >
+        
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Farming%20Simulator%2022/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Farming Simulator 22
+  </span>
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_12">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" aria-label="Farming Simulator 22" data-md-level="2">
+          <label class="md-nav__title" for="__nav_5_12">
+            <span class="md-nav__icon md-icon"></span>
+            Farming Simulator 22
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Farming%20Simulator%2022/Farming_simulator_22_FAQs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Farming simulator 22 FAQs
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Farming%20Simulator%2022/How_to_manage_your_FS22_server_files_using_FTP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to manage your FS22 server files using FTP
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Farming%20Simulator%2022/Installing_mods_on_your_FS22_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installing mods on your FS22 server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Farming%20Simulator%2022/Upgrading_your_FS22_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Upgrading your FS22 server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Farming%20Simulator%2022/Uploading_your_local_FS22_save_game/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Uploading your local FS22 save game
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_13" type="checkbox" id="__nav_5_13" checked>
+        
+        
+          <label class="md-nav__link" for="__nav_5_13">
+            
+  
+  <span class="md-ellipsis">
+    Left 4 Dead 2
+  </span>
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" aria-label="Left 4 Dead 2" data-md-level="2">
+          <label class="md-nav__title" for="__nav_5_13">
+            <span class="md-nav__icon md-icon"></span>
+            Left 4 Dead 2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    How to add sourcemod plugins
+  </span>
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How_to_become_and_admin_on_your_L4D2_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to become and admin on your L4D2 server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How_to_edit_the_MOTD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to edit the MOTD
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How_to_find_your_SteamIDs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to find your SteamIDs
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How_to_install_metamod_and_sourcemod_on_your_Left_4_Dead_2_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to install metamod and sourcemod on your Left 4 Dead 2 server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How_to_kick_players_from_your_server%28vanilla%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to kick players from your server(vanilla)
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How_to_make_the_server_available_to_matchmaking_%28Quick%20Match%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to make the server available to matchmaking (Quick Match)
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How_to_set_and_edit_RCON_password/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to set and edit RCON password
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_14" type="checkbox" id="__nav_5_14" >
+        
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Minecraft/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Minecraft
+  </span>
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_14">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" aria-label="Minecraft" data-md-level="2">
+          <label class="md-nav__title" for="__nav_5_14">
+            <span class="md-nav__icon md-icon"></span>
+            Minecraft
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Minecraft/Colors_in_Minecraft_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Colors in Minecraft server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Minecraft/How_do_I_upload_my_own_world/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How do I upload my own world
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Minecraft/How_to_add_a_server_icon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to add a server icon
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_14_5" type="checkbox" id="__nav_5_14_5" >
+        
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Minecraft/Minecraft%20%28Fragify%29/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Minecraft (Fragify)
+  </span>
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_14_5">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" aria-label="Minecraft (Fragify)" data-md-level="3">
+          <label class="md-nav__title" for="__nav_5_14_5">
+            <span class="md-nav__icon md-icon"></span>
+            Minecraft (Fragify)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Minecraft/Minecraft%20%28Fragify%29/How_to_create_a_scheduled_backup_of_the_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to create a scheduled backup of the server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Minecraft/Minecraft%20%28Fragify%29/How_to_install_FTB_on_Minecraft_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to install FTB on Minecraft server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Minecraft/Minecraft%20%28Fragify%29/How_to_manage_your_files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to manage your files
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Minecraft/Minecraft%20%28Fragify%29/How_to_switch_Java_version/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to switch Java version
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_15" type="checkbox" id="__nav_5_15" >
+        
+        
+          <label class="md-nav__link" for="__nav_5_15">
+            
+  
+  <span class="md-ellipsis">
+    Path Of Titans
+  </span>
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" aria-label="Path Of Titans" data-md-level="2">
+          <label class="md-nav__title" for="__nav_5_15">
+            <span class="md-nav__icon md-icon"></span>
+            Path Of Titans
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Path%20Of%20Titans/Admin_Chat_Commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Admin Chat Commands
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Path%20Of%20Titans/How_to_add_admins_or_remove_admins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to add admins or remove admins
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Path%20Of%20Titans/How_to_ban_or_unban_players/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to ban or unban players
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Path%20Of%20Titans/How_to_create_whitelist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to create whitelist
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_16" type="checkbox" id="__nav_5_16" >
+        
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Procon%20Layer/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Procon Layer
+  </span>
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_16">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" aria-label="Procon Layer" data-md-level="2">
+          <label class="md-nav__title" for="__nav_5_16">
+            <span class="md-nav__icon md-icon"></span>
+            Procon Layer
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Procon%20Layer/adding-plugins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adding plugins
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Procon%20Layer/adding-users/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adding users
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Procon%20Layer/configuring-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuring server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Procon%20Layer/connecting-to-procon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connecting to procon
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Procon%20Layer/setting-maps-via-procon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting maps via procon
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Procon%20Layer/setting-up-procon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting up procon
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Procon%20Layer/troubleshoot-insane-limits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshoot insane limits
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_17" type="checkbox" id="__nav_5_17" >
+        
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Project%20Zomboid/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Project Zomboid
+  </span>
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_17">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" aria-label="Project Zomboid" data-md-level="2">
+          <label class="md-nav__title" for="__nav_5_17">
+            <span class="md-nav__icon md-icon"></span>
+            Project Zomboid
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Project%20Zomboid/Adding_admins_Project_Zomboid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adding admins Project Zomboid
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Project%20Zomboid/Creating_a_whitelist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Creating a whitelist
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Project%20Zomboid/How_to_add_admins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to add admins
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_18" type="checkbox" id="__nav_5_18" >
+        
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../RUST/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    RUST
+  </span>
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_18">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" aria-label="RUST" data-md-level="2">
+          <label class="md-nav__title" for="__nav_5_18">
+            <span class="md-nav__icon md-icon"></span>
+            RUST
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RUST/adding-admins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to add admins to your RUST server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RUST/change-server-name/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Change server name
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RUST/header-and-server-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Header and server description
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RUST/install-oxide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Install oxide
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RUST/installing-rustio/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installing rustio
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RUST/load-custom-map/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Load custom map
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RUST/rust-wipe/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rust wipe
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_19" type="checkbox" id="__nav_5_19" >
+        
+        
+          <label class="md-nav__link" for="__nav_5_19">
+            
+  
+  <span class="md-ellipsis">
+    Satisfactory
+  </span>
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" aria-label="Satisfactory" data-md-level="2">
+          <label class="md-nav__title" for="__nav_5_19">
+            <span class="md-nav__icon md-icon"></span>
+            Satisfactory
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Satisfactory/How_to_access_your_in-game_console/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to access your in game console
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Satisfactory/How_to_change_my_starting_area/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to change my starting area
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Satisfactory/How_to_change_the_name_of_your_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to change the name of your server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Satisfactory/How_to_change_your_admin_password/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to change your admin password
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Satisfactory/How_to_change_your_game_to_experimental/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to change your game to experimental
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Satisfactory/How_to_set_a_password_for_your_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to set a password for your server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Satisfactory/This_server_appears_to_be_offline_and_how_to_solve_it/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    This server appears to be offline and how to solve it
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_20" type="checkbox" id="__nav_5_20" >
+        
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Terraria/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Terraria
+  </span>
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_20">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" aria-label="Terraria" data-md-level="2">
+          <label class="md-nav__title" for="__nav_5_20">
+            <span class="md-nav__icon md-icon"></span>
+            Terraria
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Terraria/Installing-mods/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installing mods
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Terraria/generate-new-world/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generate new world
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Terraria/server-commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Server commands
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Terraria/upload-existing-world/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Upload existing world
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_20_6" type="checkbox" id="__nav_5_20_6" >
+        
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Terraria/TShock/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    TShock
+  </span>
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_20_6">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" aria-label="TShock" data-md-level="3">
+          <label class="md-nav__title" for="__nav_5_20_6">
+            <span class="md-nav__icon md-icon"></span>
+            TShock
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Terraria/TShock/tshock-adding-admins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tshock adding admins
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Terraria/TShock/tshock-server-commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tshock server commands
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_21" type="checkbox" id="__nav_5_21" >
+        
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../The%20Forest/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    The Forest
+  </span>
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_21">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" aria-label="The Forest" data-md-level="2">
+          <label class="md-nav__title" for="__nav_5_21">
+            <span class="md-nav__icon md-icon"></span>
+            The Forest
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../The%20Forest/becoming-adming-the-forest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Becoming adming the forest
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../The%20Forest/connecting-to-the-forest-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connecting to the forest server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../The%20Forest/setup-your-the-forest-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup your the forest server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_22" type="checkbox" id="__nav_5_22" >
+        
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../V%20Rising/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    V Rising
+  </span>
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_22">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" aria-label="V Rising" data-md-level="2">
+          <label class="md-nav__title" for="__nav_5_22">
+            <span class="md-nav__icon md-icon"></span>
+            V Rising
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../V%20Rising/adding-admins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to add admins to your server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../V%20Rising/admin-commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Admin Commands
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../V%20Rising/server-configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Server Configuration
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../V%20Rising/update-server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Updating your server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_23" type="checkbox" id="__nav_5_23" >
+        
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Valheim/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Valheim
+  </span>
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_23">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" aria-label="Valheim" data-md-level="2">
+          <label class="md-nav__title" for="__nav_5_23">
+            <span class="md-nav__icon md-icon"></span>
+            Valheim
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Valheim/Connecting_to_your_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connecting to your server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Valheim/Getting_started_and_configuring_server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting started and configuring server
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Valheim/How_to_become_an_administrator_and_how_to_use_commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to become an administrator and how to use commands
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Valheim/How_to_import_your_Valheim_world_from_your_computer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to import your Valheim world from your computer
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Valheim/How_to_install_Valheim_Plus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to install Valheim Plus
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Valheim/How_to_make_your_Valheim_server_appear_on_server_list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to make your Valheim server appear on server list
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+
+
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+        
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../Troubleshooting/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_6">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" aria-label="Troubleshooting" data-md-level="1">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Troubleshooting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Troubleshooting/how-to-perform-a-WinMTR/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to perform a WinMTR
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Troubleshooting/stuck-on-disabled/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Server stuck on Processing/Disabled
+  </span>
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+  
+                
+  <a href="https://github.com/FragnetNetwork/wiki/edit/master/docs/Games/Left 4 Dead 2/How_to_add_sourcemod_plugins.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+  <h1>How to add sourcemod plugins</h1>
+
+<ol>
+<li>
+<p>Firstly, you’ll need sourcemod installed, do check out our guide on how to install it if you need help.</p>
+</li>
+<li>
+<p>If you have sourcemod already installed, go to these sites to download the plugin you want.</p>
+</li>
+<li>
+<p>https://forums.alliedmods.net/forumdisplay.php?f=108</p>
+</li>
+<li>
+<p>https://www.sourcemod.net/plugins.php?</p>
+</li>
+<li>
+<p>Once you have chosen and downloaded the wanted plugin navigate to your <strong>File Manager</strong>, go to <code>left4dead2 =&gt; addons =&gt; sourcemod =&gt; plugins</code>.</p>
+</li>
+</ol>
+<p><img alt="File Manager" src="../images/file-manager.png" /></p>
+<ol>
+<li>Then upload the plugin in that directory by clicking on upload or just drag and dropping the file.</li>
+</ol>
+<p><img alt="" src="../images/upload-plugin.png" /></p>
+<ol>
+<li>Once it has been uploaded, Start/Restart your server, and it has been installed.</li>
+</ol>
+<blockquote>
+<p>If the mod has any other instructions on setting it up, please read through the instructions as every mod is unique, and some do require additional setups.</p>
+</blockquote>
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      <span class="md-source-file__fact">
+        <span class="md-icon" title="Date of last update">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+        </span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-08-16</span>
+      </span>
+    
+    
+      <span class="md-source-file__fact">
+        <span class="md-icon" title="Date of creation">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
+        </span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-08-16</span>
+      </span>
+    
+    
+    
+  </aside>
+
+
+
+
+              
+
+  
+
+            </article>
+            
+<script>var input,hash=location.hash.slice(1);hash.startsWith("__tabbed_")&&((input=document.getElementById(hash)).checked=!0)</script>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../../Farming%20Simulator%2022/Uploading_your_local_FS22_save_game/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Uploading your local FS22 save game" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Uploading your local FS22 save game
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../How_to_become_and_admin_on_your_L4D2_server/" class="md-footer__link md-footer__link--next" aria-label="Next: How to become and admin on your L4D2 server" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              How to become and admin on your L4D2 server
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs Insiders
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/fragnetwork" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tracking", "navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.720157f5.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.f846be03.min.js"></script>
+      
+    
+  </body>
+</html>
