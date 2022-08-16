@@ -44,12 +44,14 @@ Here you can find articles about our Games:
 - **[Conan Exiles](../Games/Conan Exiles/)**
 - **[CS GO](../Games/CS GO/)**
 - **[DayZ](../Games/DayZ/)**
+- **[Don't Starve Together](../Games/Don't Starve Together/)**
 - **[Farming Simulator 19](../Games/Farming Simulator 19/)**
 - **[Farming Simulator 22](../Games/Farming Simulator 22/)** 
 - **[Minecraft](../Games/Minecraft/)**            
 - **[Procon Layer](../Games/Procon Layer/)**                 
 - **[Project Zomboid](../Games/Project Zomboid/)**
-- **[RUST](../Games/RUST/)**                                 
+- **[RUST](../Games/RUST/)**
+- **[Satisfactory](../Games/Satisfactory/)**                                 
 - **[Terraria](../Games/Terraria/)**
 - **[The Forest](../Games/The Forest/)**                     
 - **[V Rising](../Games/V Rising/)**
