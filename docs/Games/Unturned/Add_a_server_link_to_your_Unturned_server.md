@@ -2,12 +2,12 @@ For example, a server link on an Unturned server can be used to redirect people 
 
 1. Navigate to your **File Manager**. 
 
-![File Manager](images/file-manager.png)
+![File Manager](../images/file-manager.png)
 
 2. Go to `Servers => Default => Config.json` and open up the config.
 
 3. Once there at the beginning, you will find the command called `Links`. 
-![Links](images/links.png)
+![Links](../images/links.png)
 
 Instead of null, you need to add:
 ```
@@ -22,7 +22,7 @@ Instead of null, you need to add:
  }
 ]
 ```
-![](images/example-links.png)
+![](../images/example-links.png)
 You can add more after the ` },` in the code above
 if you have more links to connect to:
 ```
