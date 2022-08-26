@@ -1,4 +1,4 @@
-Changing the difficulty is more straightforward with our game panel as all needed settings are available in the **Settings** tab.
+Changing the difficulty is more straightforward with our game panel as all needed settings are available in the **Configure** tab.
 ![Settings](../images/settings.png)
 
 1. After clicking on the **Settings** tab, it will open up another section. Scroll down and look for the **DIFFICULTY MODE** variable.

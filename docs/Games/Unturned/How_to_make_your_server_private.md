@@ -1,5 +1,5 @@
 1. Go to your Fragify game panel and navigate to **Settings**.
-![Settings](../images/settings.png)
+![Configure](../images/settings.png)
 
 2. Once there, scroll down and find **SERVER PASSWORD** variable.
 ![](../images/server-password.png)

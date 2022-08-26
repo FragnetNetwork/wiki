@@ -1,4 +1,4 @@
-Changing the map is more straightforward with our game panel as all needed settings are available in the **Settings** tab. 
+Changing the map is more straightforward with our game panel as all needed settings are available in the **Configure** tab. 
 
 ![Settings](../images/settings.png)
 

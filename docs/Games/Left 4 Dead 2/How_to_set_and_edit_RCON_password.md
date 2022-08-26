@@ -6,7 +6,7 @@ Changing/Setting the RCON password:
 
 1. Go to your Fragify Gamepanel   
 
-2. Click on the **Settings** tab and scroll down till the **RCON PASSWORD** window.
+2. Click on the **Configure** tab and scroll down till the **RCON PASSWORD** window.
 
 ![Settings](../images/settings.png)
 

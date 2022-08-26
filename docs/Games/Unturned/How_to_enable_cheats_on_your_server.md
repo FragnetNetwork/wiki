@@ -1,4 +1,4 @@
-Turning on cheats on your Unturned server is more straightforward with our game panel as all needed settings are available in the **Settings** tab.
+Turning on cheats on your Unturned server is more straightforward with our game panel as all needed settings are available in the **Configure** tab.
 
 ![Settings](../images/settings.png) 
 

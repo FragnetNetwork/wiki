@@ -1,4 +1,4 @@
-1. Go to your Fragify gamepanel and navigate to **Settings**.
+1. Go to your Fragify gamepanel and navigate to **Configure**.
 ![](../images/settings.png)
 
 2. Once there, scroll down and find the **Switch between PvE/PvP** variable. Click on the arrow and choose what option you want.
