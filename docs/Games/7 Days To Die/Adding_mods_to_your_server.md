@@ -4,11 +4,11 @@ To begin with, you will need to follow the next steps to implement mods on your 
 
 **Step 2:** You will find a section named **File Manager** on the left-side menu and click on it.
 
-![File Manager](images/file-manager.png)  
+![File Manager](../images/file-manager.png)  
 
 **Step 3:** Now there will be an option to create a directory that says **Create Directory**, after clicking on it, you will be displayed an input prompt with **Directory Name** where you need to write name **Mods**.
-![Create Directory](images/create-directory.png)
-![Mods Folder](images/folder-mods.png)
+![Create Directory](../images/create-directory.png)
+![Mods Folder](../images/folder-mods.png)
 
 **Step 4:** After you created a folder now you will need to navigate to one of the sites where you can download Mods, two of the most famous are [7daystodiemods](https://7daystodiemods.com/) and [NexusMods](https://www.nexusmods.com/7daystodie).  
 
@@ -17,6 +17,6 @@ To begin with, you will need to follow the next steps to implement mods on your 
 **Step 6:** After you downloaded all the mods, you can drag and drop them in the **Mods** folder or use **Upload** button.
 
 **Step 7:** Select archive of the mod that you have uploaded and click on **...**  , then select option **Unarchive**.
-![Unarchive](images/unarchive.png)
+![Unarchive](../images/unarchive.png)
 
 **Step 8:** Restart your server, so your adjustments are in place and you are good to go!

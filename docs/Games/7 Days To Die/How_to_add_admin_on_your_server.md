@@ -8,7 +8,7 @@ This will be a guide on how you can add admin to your [7 Days To Die](https://fr
 
 **Step 3:** Click on a section named **File Manager** on the left-side menu.
 
-![File Manager](images/file-manager.png)  
+![File Manager](../images/file-manager.png)  
 
 **Step 4:** Navigate to the following directory: `.local/share/7DaysToDie/Saves` and open **serveradmin.xml** file. 
 

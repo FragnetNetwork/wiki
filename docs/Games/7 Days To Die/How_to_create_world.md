@@ -14,7 +14,7 @@ When setting the higher value, the server will start generating a large map size
 
 **Step 2:** Go to **File Manager** and navigate to `.local/share/7DaysToDie/Saves` directory.  
 
-![File Manager](images/file-manager.png)
+![File Manager](../images/file-manager.png)
 
 **Step 3:** Delete all folders there. **NOTE: Do not delete any files, only folders!**  
 
@@ -26,6 +26,6 @@ When setting the higher value, the server will start generating a large map size
 
 **Step 2:** Navigate to **Advanced** option on the left-side menu. Make sure to click on consent **I understand this will delete all of my files** and the new button **Wipe Server** will appear.  
 
-![Wipe Server](images/wipe-server.png)
+![Wipe Server](../images/wipe-server.png)
 
 **Step 3:** Click on **Wipe Server** and your server will be completely wiped. 
