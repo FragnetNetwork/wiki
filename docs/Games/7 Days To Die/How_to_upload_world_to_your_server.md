@@ -4,6 +4,7 @@
 
 2. After finding the world you want to upload, you need to make a `.zip` archive of the world folder inside **Saves** .
 > If the world is randomly generated, you will need also include **GeneratedWorlds** folder that can be found in the following path: `C:\Users\YourPCUsername\AppData\Roaming\7 Days to Die\`
+
 ![Saves](../images/saves.png)
 ![GeneratedWorlds](../images/generated-worlds.png)
 
