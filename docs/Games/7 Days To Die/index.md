@@ -35,3 +35,4 @@ An in-depth steps to configure your 7 Days To Die server.
 |      **[How to change server name](How_to_change_name_of_server.md)**     |
 | **[How to create a world](How_to_create_world.md)**                       |
 | **[How to edit configuration files](How_to_edit_configuration_files.md)** |
+| **[How to upload your local world to your server](How_to_upload_world_to_your_server.md)** |
