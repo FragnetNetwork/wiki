@@ -16,7 +16,7 @@
     
     
       
-        <title>Header and server description - Fragnet Public Wiki (Beta)</title>
+        <title>How to add header image and server description - Fragnet Public Wiki (Beta)</title>
       
     
     
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Header and server description
+              How to add header image and server description
             
           </span>
         </div>
@@ -3877,6 +3877,26 @@
   
   
     <li class="md-nav__item">
+      <a href="../How_to_install_oxide_and_umod_plugins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installing Oxide plugins on the server
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../adding-admins/" class="md-nav__link">
         
   
@@ -3901,7 +3921,7 @@
         
   
   <span class="md-ellipsis">
-    Change server name
+    How to change your server name
   </span>
   
 
@@ -3930,7 +3950,7 @@
           
   
   <span class="md-ellipsis">
-    Header and server description
+    How to add header image and server description
   </span>
   
 
@@ -3941,7 +3961,7 @@
         
   
   <span class="md-ellipsis">
-    Header and server description
+    How to add header image and server description
   </span>
   
 
@@ -4043,26 +4063,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../install-oxide/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Install oxide
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../installing-rustio/" class="md-nav__link">
         
   
@@ -4087,7 +4087,7 @@
         
   
   <span class="md-ellipsis">
-    Load custom map
+    How to load custom map on your Rust Server
   </span>
   
 
@@ -4107,7 +4107,7 @@
         
   
   <span class="md-ellipsis">
-    Rust wipe
+    How to wipe your Rust server and/or Player Data
   </span>
   
 
@@ -5907,31 +5907,33 @@
 
 <h1 id="how-to-add-header-image-and-server-description">How to add header image and server description</h1>
 <h2 id="header-image">Header Image</h2>
-<p>It is possible to have a header image on your RUST server. The header image adds a nice touch to your server and is a great way to show what your server is about before someone joins.<br />
-Header image of your server appear when you click on the server in the RUST server browser.</p>
+<p>It is possible to have a header image on your Rust server. The header image adds a nice touch to your server and is a great way to show what your server is about before someone joins.<br />
+Header image of your server appear when you click on the server in the Rust server browser.</p>
 <h3 id="preparing-the-image-header">Preparing the Image Header</h3>
 <p>In order for the image to be loaded in the header, there are few rules that need to be followed.</p>
 <ul>
-<li>The image size must be 512x256</li>
-<li>The image must be uploaded to a public image sharing website. We recommend using Imgur.</li>
+<li>The image size must be <strong>512x256</strong> and <strong>.png</strong> or <strong>.jpg</strong> formats.</li>
 </ul>
-<p>Once you upload the image, copy the Imgur image’s link.</p>
 <p>There are quite a few online tools that can be used in case you need to resize your image.<br />
-We recommend using Picresize. Simply upload the image and proceed to editing it.<br />
-Under the Resize your picture, select custom size and write the resolution mentioned above.</p>
+We recommend using Picresize https://picresize.com/. Simply upload the image and proceed to editing it.<br />
+Under the Resize your picture, select <strong>Custom Size...</strong> and write the resolution mentioned above. Make sure that <strong>Image File Format</strong> set to <strong>PNG</strong> or <strong>JPG</strong>. After all changes made, click on <strong>I'm done, resize my picture!</strong> button.</p>
+<p><img alt="Picresize Instructions" src="../images/picresize-instructions.png" /></p>
+<ul>
+<li>The image must be uploaded to a public image sharing website. We recommend using <a href="https://imgur.com/">Imgur</a>. You can upload image by using the drag and drop function.</li>
+</ul>
+<p>Once you upload the image, copy the Imgur image’s link by right-click on the image and select <strong>Copy image address</strong> option.</p>
+<p><img alt="Example Imgur" src="../images/example-imgur.png" /></p>
 <h3 id="adding-the-image-header-to-your-server">Adding the Image Header to your server</h3>
 <ul>
-<li>Go to your RUST service on the Fragnet Game Panel</li>
-<li>Navigate to Commandline Manager -&gt; Custom commandline</li>
-<li>Edit your existing Custom commandline or create a new one</li>
-<li>Under the -server.headerimage parameter paste your image link<br />
-    Example: <a href="https://i.imgur.com/unknwn">https://i.imgur.com/unknwn</a></li>
-<li>Add the .jpg extension at the end of your link<br />
-    Example: <a href="https://i.imgur.com/unknwn.jpg">https://i.imgur.com/unknwn.jpg</a></li>
-<li>Once done, tick the checkbox before the -server.headerimage parameter and press Save.</li>
+<li>Login to the <a href="https://panel.fragify.net/auth/login">Fragify panel</a> and select your Rust server.</li>
+<li>Navigate to <strong>Configure</strong> option on the left-side menu and look for variable <strong>Server Image</strong>. Paste the link of your image uploaded to the Imgur.</li>
+</ul>
+<p><img alt="Configure" src="../images/configure.png" /></p>
+<p><img alt="Server Image" src="../images/server-image.png" /></p>
+<ul>
 <li>Restart the server so the changes can take effect.</li>
 </ul>
-<p>You should be able to see your header image once you click on your server in the RUST Server browser!</p>
+<p>You should be able to see your header image once you click on your server in the Rust Server browser!</p>
 <h2 id="server-description">Server Description</h2>
 <p>A server description is text that will appear when potential players click on a Rust server in the in-game listings. You can use this text to describe your server and attract new players.</p>
 <p>It can be used for various things but most commonly used for:</p>
@@ -5944,20 +5946,17 @@ Under the Resize your picture, select custom size and write the resolution menti
 <h3 id="adding-a-description-to-your-rust-server">Adding a description to your RUST server</h3>
 <p>Just like the Header Image, server description is also set via Custom Commandline</p>
 <ul>
-<li>Go to your RUST service on the Fragnet Game Panel</li>
-<li>Navigate to Commandline Manager -&gt; Custom commandline</li>
-<li>Edit your existing Custom commandline or create a new one</li>
-<li>Under the -server.description parameter write the text you want to have</li>
-<li>Once done, tick the checkbox before the -server.description parameter and press Save</li>
+<li>Login to the <a href="https://panel.fragify.net/auth/login">Fragify panel</a> and select your Rust server.</li>
+<li>Navigate to <strong>Configure</strong> option on the left-side menu and look for <strong>Description</strong> variable. You can type any information that you would like to appear in your server's description in-game. </li>
+</ul>
+<p><img alt="Configure" src="../images/configure.png" /></p>
+<p><img alt="Description" src="../images/description.png" /></p>
+<ul>
 <li>Restart the server so the changes can take effect.</li>
 </ul>
 <h3 id="formatting-the-text">Formatting the text</h3>
 <p><strong>New Lines</strong></p>
-<p>If you want text to appear on different lines, you can add the characters \n to create a new line directly below it. You don't need to add spaces around the \n, they can be directly touching text on either side.</p>
-<p>For example, adding the text below to the server.description parameter…</p>
-<p>Testing...\nStill testing...\nHosted by Fragnet.net</p>
-<p>…will create the following description for the server, when viewed in the in-game listings:</p>
-<p><img alt="Header" src="../images/serverinfo.png" /></p>
+<p>If you want text to appear on different lines, you can add the characters <strong>\n</strong> to create a new line directly below it. You don't need to add spaces around the <strong>\n</strong>, they can be directly touching text on either side.</p>
 
   
     
@@ -5973,7 +5972,7 @@ Under the Resize your picture, select custom size and write the resolution menti
         <span class="md-icon" title="Date of last update">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
         </span>
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-07-04</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-08-30</span>
       </span>
     
     
@@ -6009,7 +6008,7 @@ Under the Resize your picture, select custom size and write the resolution menti
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../change-server-name/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Change server name" rel="prev">
+        <a href="../change-server-name/" class="md-footer__link md-footer__link--prev" aria-label="Previous: How to change your server name" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -6018,20 +6017,20 @@ Under the Resize your picture, select custom size and write the resolution menti
               <span class="md-footer__direction">
                 Previous
               </span>
-              Change server name
+              How to change your server name
             </div>
           </div>
         </a>
       
       
         
-        <a href="../install-oxide/" class="md-footer__link md-footer__link--next" aria-label="Next: Install oxide" rel="next">
+        <a href="../installing-rustio/" class="md-footer__link md-footer__link--next" aria-label="Next: Installing rustio" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Install oxide
+              Installing rustio
             </div>
           </div>
           <div class="md-footer__button md-icon">

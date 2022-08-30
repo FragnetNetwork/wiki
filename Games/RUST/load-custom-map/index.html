@@ -16,7 +16,7 @@
     
     
       
-        <title>Load custom map - Fragnet Public Wiki (Beta)</title>
+        <title>How to load custom map on your Rust Server - Fragnet Public Wiki (Beta)</title>
       
     
     
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Load custom map
+              How to load custom map on your Rust Server
             
           </span>
         </div>
@@ -3877,6 +3877,26 @@
   
   
     <li class="md-nav__item">
+      <a href="../How_to_install_oxide_and_umod_plugins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installing Oxide plugins on the server
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../adding-admins/" class="md-nav__link">
         
   
@@ -3901,7 +3921,7 @@
         
   
   <span class="md-ellipsis">
-    Change server name
+    How to change your server name
   </span>
   
 
@@ -3921,27 +3941,7 @@
         
   
   <span class="md-ellipsis">
-    Header and server description
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../install-oxide/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Install oxide
+    How to add header image and server description
   </span>
   
 
@@ -3990,7 +3990,7 @@
         
   
   <span class="md-ellipsis">
-    Load custom map
+    How to load custom map on your Rust Server
   </span>
   
 
@@ -4011,7 +4011,7 @@
         
   
   <span class="md-ellipsis">
-    Rust wipe
+    How to wipe your Rust server and/or Player Data
   </span>
   
 
@@ -5735,26 +5735,36 @@
 
 
 
-<h1 id="how-to-load-custom-map-on-your-rust-server">How to load custom map on your RUST Server</h1>
-<p>It is possible to have a custom map on the RUST Server apart from the original ones and it's rather easy to load one. Just follow these simple steps:</p>
+<h1 id="how-to-load-custom-map-on-your-rust-server">How to load custom map on your Rust Server</h1>
+<p>It is possible to have a custom map on the Rust Server apart from the original ones and it's rather easy to load one. You can get custom maps from http://playrust.io/
+or https://rustmaps.com/.</p>
+<p>Just follow these simple steps:</p>
 <ol>
-<li>Upload your custom .map file to Dropbox</li>
-<li>Once uploaded, copy the download link</li>
-<li>Go to your RUST service on the Fragnet Game Panel</li>
-<li>Navigate to Commandline Manager ⇾ Custom commandline</li>
-<li>Edit your existing Custom commandline or create a new one</li>
-<li>Under the +levelurl parameter paste your download link<br />
-    Example: https://www.dropbox.com/s/<randomcharacters>/<mapname>.map?dl=0</li>
-<li>Change the dl=0 to dl=1 in that link<br />
-    Example: https://www.dropbox.com/s/<randomcharacters>/<mapname>.map?dl=1</li>
-<li>Once done, tick the checkbox before the +levelurl parameter and press Save.</li>
-<li>Restart the server so the changes can take effect.</li>
+<li>
+<p>Upload your custom .map file to Dropbox.</p>
+</li>
+<li>
+<p>Once uploaded, copy the download link.</p>
+</li>
+<li>
+<p>Login to the <a href="https://panel.fragify.net/auth/login">Fragify panel</a> and select your Rust server.</p>
+</li>
+<li>
+<p>Navigate to <strong>Configure</strong> option on the left-side menu and look for <strong>Server Level URL</strong> variable.</p>
+</li>
 </ol>
-<p>You have now successfully added a custom map to your RUST server!</p>
-<div class="admonition info">
-<p class="admonition-title">INFO</p>
-<p>If you are just trying to load a custom map that is already uploaded by a third party, you should start from step 3.</p>
-</div>
+<p><img alt="Configure" src="../images/configure.png" /></p>
+<p><img alt="Server Level URL" src="../images/server-lvl-url.png" /></p>
+<ol>
+<li>Paste the download link. Example:
+<div class="highlight"><pre><span></span><code> https://www.dropbox.com/s/&lt;randomcharacters&gt;/&lt;mapname&gt;.map?dl=0
+</code></pre></div></li>
+<li>Change the <strong>dl=0</strong> to <strong>dl=1</strong> in that link.  Example: 
+<div class="highlight"><pre><span></span><code>https://www.dropbox.com/s/&lt;randomcharacters&gt;/&lt;mapname&gt;.map?dl=1
+</code></pre></div></li>
+<li>Once done,restart the server so the changes can take effect.</li>
+</ol>
+<p>You have now successfully added a custom map to your Rust server!</p>
 
   
     
@@ -5770,7 +5780,7 @@
         <span class="md-icon" title="Date of last update">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
         </span>
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-07-04</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-08-30</span>
       </span>
     
     
@@ -5822,13 +5832,13 @@
       
       
         
-        <a href="../rust-wipe/" class="md-footer__link md-footer__link--next" aria-label="Next: Rust wipe" rel="next">
+        <a href="../rust-wipe/" class="md-footer__link md-footer__link--next" aria-label="Next: How to wipe your Rust server and/or Player Data" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Rust wipe
+              How to wipe your Rust server and/or Player Data
             </div>
           </div>
           <div class="md-footer__button md-icon">

@@ -16,7 +16,7 @@
     
     
       
-        <title>Rust wipe - Fragnet Public Wiki (Beta)</title>
+        <title>How to wipe your Rust server and/or Player Data - Fragnet Public Wiki (Beta)</title>
       
     
     
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Rust wipe
+              How to wipe your Rust server and/or Player Data
             
           </span>
         </div>
@@ -3877,6 +3877,26 @@
   
   
     <li class="md-nav__item">
+      <a href="../How_to_install_oxide_and_umod_plugins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installing Oxide plugins on the server
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../adding-admins/" class="md-nav__link">
         
   
@@ -3901,7 +3921,7 @@
         
   
   <span class="md-ellipsis">
-    Change server name
+    How to change your server name
   </span>
   
 
@@ -3921,27 +3941,7 @@
         
   
   <span class="md-ellipsis">
-    Header and server description
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../install-oxide/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Install oxide
+    How to add header image and server description
   </span>
   
 
@@ -3981,7 +3981,7 @@
         
   
   <span class="md-ellipsis">
-    Load custom map
+    How to load custom map on your Rust Server
   </span>
   
 
@@ -4006,63 +4006,15 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Rust wipe
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Rust wipe
+    How to wipe your Rust server and/or Player Data
   </span>
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-using-fragnet-rust-server-wiper" class="md-nav__link">
-    <span class="md-ellipsis">
-      1 Using Fragnet RUST Server Wiper
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-manual-wipe" class="md-nav__link">
-    <span class="md-ellipsis">
-      2 Manual wipe
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -5766,32 +5718,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-using-fragnet-rust-server-wiper" class="md-nav__link">
-    <span class="md-ellipsis">
-      1 Using Fragnet RUST Server Wiper
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-manual-wipe" class="md-nav__link">
-    <span class="md-ellipsis">
-      2 Manual wipe
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -5809,31 +5735,51 @@
 
 
 
-<h1 id="how-to-wipe-your-rust-server-andor-player-data">How to wipe your RUST server and/or Player Data</h1>
+<h1 id="how-to-wipe-your-rust-server-andor-player-data">How to wipe your Rust server and/or Player Data</h1>
 <p>It is recommended that Rust server owners reset their worlds every 30-days to help keep their server community active.  </p>
 <p>By doing the following steps, you will <strong>irreversibly</strong> delete your world file and/or player data.  </p>
-<p>There are 2 ways you can wipe data from your RUST server:</p>
-<h3 id="1-using-fragnet-rust-server-wiper">1 Using Fragnet RUST Server Wiper</h3>
+<p>There are 2 ways you can wipe data from your Rust server:</p>
+<h1 id="1-using-fragify-wipe-function">#1 Using Fragify Wipe function</h1>
 <hr />
 <ul>
-<li>Go to your RUST service on the Fragnet Game Panel</li>
-<li>Navigate to Rust Server Wiper</li>
-<li>Make sure to select the identity you specified in your commandline!! (by default it's fragnet)</li>
-<li>Simply select things that you want to wipe</li>
-<li>Once ready, press Execute and let it finish</li>
+<li>
+<p>Login to the <a href="https://panel.fragify.net/auth/login">Fragify panel</a> and select your Rust server.</p>
+</li>
+<li>
+<p>Navigate to <strong>Manage Wipes</strong> function on the left-side menu.</p>
+</li>
+</ul>
+<p><img alt="Manage Wipes" src="../images/manage-wipes.png" /></p>
+<ul>
+<li>Set the <strong>name</strong>, <strong>description</strong>, <strong>map size</strong> and <strong>map seed</strong> to your preferences or set to 0/empty to be left unchanged. <blockquote>
+<p>If you wish to set random seed on every wipe, click on <strong>Random Seed</strong> to be enabled.</p>
+</blockquote>
+</li>
+</ul>
+<p><img alt="Example of Wipe Options" src="../images/example-wipeoptions.png" /></p>
+<ul>
+<li>
+<p>If you want to remove specific files, you can input the exact path and name of the file and click on <strong>Add</strong> button. </p>
+</li>
+<li>
+<p>You can also choose to <strong>Wipe Blueprints</strong>, <strong>Wipe World</strong>, <strong>Restart Server</strong> after wipe, <strong>Schedule Wipe</strong> for custom time and date. </p>
+</li>
+<li>
+<p>Once ready, press <strong>Wipe</strong> button.</p>
+</li>
+</ul>
+<p><img alt="Example of Wipe Options" src="../images/example-wipeoptions1.png" /></p>
+<ul>
 <li>Your server will restart and everything your selected will be wiped  </li>
 </ul>
-<p><img alt="Wipe1" src="../images/wipe1.png" /></p>
-<h3 id="2-manual-wipe">2 Manual wipe</h3>
+<h1 id="2-manual-wipe">#2 Manual wipe</h1>
 <hr />
-<p>Manual wipe is done either via File Manager on our panel, or by using an FTP client.    </p>
-<p>Navigate to your /server/your_server_identity folder (by default it's /server/fragnet).<br />
+<p>Manual wipe is done either via File Manager on our Fragify panel.    </p>
+<p>Navigate to your <code>/server/yourServerIdentity</code> folder (by default it's <code>/server/rust</code>).<br />
 Your world and player data is stored here.</p>
-<p>To delete the <strong>player data only</strong>, delete the player *.db files . This includes blueprints, inventories, positions, etc.<br />
-<img alt="Wipe2" src="../images/wipe2.png" /></p>
-<p>Simply delete every file that starts with player_.db</p>
-<p>To delete the <strong>world data only</strong>, delete the files ending with <strong>.map</strong> and <strong>.sav</strong>. If you're not using a custom map this will be the file labeled "proceduralmap".<br />
-<img alt="Wipe3" src="../images/wipe3.png" />  </p>
+<p>To delete the <strong>player data only</strong>, delete the player <strong>*.db</strong> files . This includes blueprints, inventories, positions, etc.  </p>
+<p>Simply delete every file that starts with <strong>player_.db</strong>.</p>
+<p>To delete the <strong>world data only</strong>, delete the files ending with <strong>.map</strong> and <strong>.sav</strong>. If you're not using a custom map this will be the file labeled "proceduralmap".   </p>
 <p>If you want to completely wipe your server, you would simply need to delete all the files mentioned above.</p>
 <p>By deleting these files, you will <strong>irreversibly</strong> delete your world file and/or player data. Be careful when proceeding with this!</p>
 
@@ -5851,7 +5797,7 @@ Your world and player data is stored here.</p>
         <span class="md-icon" title="Date of last update">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
         </span>
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-07-04</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-08-30</span>
       </span>
     
     
@@ -5887,7 +5833,7 @@ Your world and player data is stored here.</p>
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../load-custom-map/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Load custom map" rel="prev">
+        <a href="../load-custom-map/" class="md-footer__link md-footer__link--prev" aria-label="Previous: How to load custom map on your Rust Server" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -5896,7 +5842,7 @@ Your world and player data is stored here.</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Load custom map
+              How to load custom map on your Rust Server
             </div>
           </div>
         </a>

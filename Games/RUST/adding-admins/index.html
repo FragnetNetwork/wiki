@@ -3875,6 +3875,26 @@
                 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../How_to_install_oxide_and_umod_plugins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installing Oxide plugins on the server
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -3923,9 +3943,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#adding-admins-via-configuration-file" class="md-nav__link">
+  <a href="#adding-admins-via-a-configuration-file" class="md-nav__link">
     <span class="md-ellipsis">
-      Adding admins via configuration file
+      Adding admins via a configuration file
     </span>
   </a>
   
@@ -3959,7 +3979,7 @@
         
   
   <span class="md-ellipsis">
-    Change server name
+    How to change your server name
   </span>
   
 
@@ -3979,27 +3999,7 @@
         
   
   <span class="md-ellipsis">
-    Header and server description
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../install-oxide/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Install oxide
+    How to add header image and server description
   </span>
   
 
@@ -4039,7 +4039,7 @@
         
   
   <span class="md-ellipsis">
-    Load custom map
+    How to load custom map on your Rust Server
   </span>
   
 
@@ -4059,7 +4059,7 @@
         
   
   <span class="md-ellipsis">
-    Rust wipe
+    How to wipe your Rust server and/or Player Data
   </span>
   
 
@@ -5773,9 +5773,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#adding-admins-via-configuration-file" class="md-nav__link">
+  <a href="#adding-admins-via-a-configuration-file" class="md-nav__link">
     <span class="md-ellipsis">
-      Adding admins via configuration file
+      Adding admins via a configuration file
     </span>
   </a>
   
@@ -5812,52 +5812,70 @@
 <h1 id="how-to-add-admins-to-your-rust-server">How to add admins to your RUST server</h1>
 <p>Admin access on a Rust server allows a player to execute all Rust commands in-game. This is important since it gives you access to the commands for keeping your server clean from the players violating your rules, but to many other things such as teleporting, spawning items and more!</p>
 <p>A full list of Rust server commands can be found <a href="http://rust.wikia.com/wiki/Server_Commands">here</a>.</p>
-<h2 id="adding-admins-via-configuration-file">Adding admins via configuration file</h2>
+<h2 id="adding-admins-via-a-configuration-file">Adding admins via a configuration file</h2>
 <p>There are two admin user roles on a Rust server:</p>
 <ul>
 <li><strong>ownerid</strong> - This Admin role gives access to all admin commands, including access to add other Rust admins.</li>
-<li><strong>moderatorid</strong> - This Admin role gives access to all admin commands, but does not allow the user to add other admins.</li>
+<li><strong>moderatorid</strong> - This Admin role gives access to all admin commands but does not allow the user to add other admins.</li>
 </ul>
-<p>To add an admin via configuration file on your server follow these few steps:</p>
+<p>To add an admin via configuration file on your server, follow these few steps:</p>
 <ul>
-<li>Go to your RUST service on the Fragnet Game Panel</li>
-<li>Navigate to Configuration files</li>
-<li>Use the Text editor for users.cfg</li>
+<li>Go to your Rust server on the Fragify Game Panel</li>
+<li>Navigate to <strong>File Manager</strong> on the left-side menu.</li>
+</ul>
+<p><img alt="File Manager" src="../images/file-manager.png" /></p>
+<ul>
 <li>
-<p>In the <strong>users.cfg</strong> put the following line, on each separate line, for each user you would like to assign as a Rust admin:<br />
-    ownerid steamid64 "optional username" "optional reason"<br />
-    or<br />
-    You can add users as Rust moderator in the same <strong>users.cfg</strong> file by replacing "<strong>ownerid</strong>" in the above command with "<strong>moderatorid</strong>" like this:<br />
-    moderatorid steamid64 "optional username" "optional reason"</p>
-<p>Here is an example of how a <strong>users.cfg</strong> would look like with multiple users added:<br />
-ownerid 76812312312312311 "Fragnet" "Some reason"<br />
-ownerid 76812312312312312 "Fragnet2" <br />
-moderatorid 76812312312312313 "Fragnet3" "Great helper"<br />
-moderatorid 76812312312312314 "Fragnet4"  </p>
+<p>Go to the following directory <code>server/rust/cfg/</code> and you will find there <strong>users.cfg</strong> file.</p>
+<blockquote>
+<p>If you use custom server identity, the location of <strong>users.cfg</strong> file will be in <code>server\nameOfYourServerIdentity\cfg\</code></p>
+</blockquote>
 </li>
 <li>
-<p>After adding users to the "<strong>users.cfg</strong>" file, click "<strong>Save</strong>" and then restart your Rust server.</p>
+<p>Open <strong>users.cfg</strong> and input the following line, on each separate line, for each user you would like to assign as a Rust admin:<br />
+<div class="highlight"><pre><span></span><code>ownerid Steam64ID &quot;optional username&quot; &quot;optional reason&quot;
+</code></pre></div>
+You can add users as Rust moderator in the same <strong>users.cfg</strong> file by replacing "<strong>ownerid</strong>" in the above command with "<strong>moderatorid</strong>" like this:</p>
 </li>
+</ul>
+<div class="highlight"><pre><span></span><code>moderatorid steamid64 &quot;optional username&quot; &quot;optional reason&quot;
+</code></pre></div>
+<p>Here is an example of how a <strong>users.cfg</strong> would look like with multiple users added:  </p>
+<div class="highlight"><pre><span></span><code>ownerid 76812312312312311 &quot;Fragnet&quot; &quot;Some reason&quot;  
+ownerid 76812312312312312 &quot;Fragnet2&quot;   
+moderatorid 76812312312312313 &quot;Fragnet3&quot; &quot;Great helper&quot;  
+moderatorid 76812312312312314 &quot;Fragnet4&quot;  
+</code></pre></div>
+<ul>
+<li>After adding users to the "<strong>users.cfg</strong>" file, click "<strong>Save Content</strong>" and then restart your Rust server for the changes to be applied.</li>
 </ul>
 <h2 id="adding-admins-via-rcon">Adding admins via RCON</h2>
-<p>Admins/moderators can also be added via RCON console.</p>
+<p>Admins/moderators can also be added via the RCON console.</p>
 <ul>
-<li>Connect to your server</li>
-<li>While remaining in-game, go to your RUST service on the Fragnet Game Panel</li>
-<li>Navigate to Facepunch WebRCON</li>
-<li>Login and go to console</li>
-<li>Simply write the following commands if you want to add admin:<br />
-    ownerid steamid64 "optional username" "optional reason"<br />
-    server.writecfg<br />
-    or<br />
-    moderatorid steamid64 "optional username" "optional reason"<br />
-    server.writecfg<br />
-    In case you want to add a moderator,</li>
-<li>After this is done, simply reconnect to the server and allow that role to apply.</li>
+<li>
+<p>Connect to your server</p>
+</li>
+<li>
+<p>While remaining in-game, go to your Rust server on the Fragify Game Panel</p>
+</li>
+<li>
+<p>You will see server's console and <strong>Type a command...</strong> input window. </p>
+</li>
+<li>
+<p>Simply write the following commands if you want to add admin: 
+<div class="highlight"><pre><span></span><code>ownerid steamid64 &quot;optional username&quot; &quot;optional reason&quot;  
+server.writecfg
+</code></pre></div></p>
+</li>
 </ul>
+<p>In case you want to add a moderator:
+<div class="highlight"><pre><span></span><code>moderatorid steamid64 &quot;optional username&quot; &quot;optional reason&quot;  
+server.writecfg 
+</code></pre></div>
+*   After this is done, simply reconnect to the server and allow that role to apply.</p>
 <p>Other 3rd party apps can be used to input the above commands for adding admins. We suggest using <a href="https://www.rustadmin.com/">RustAdmin</a>.  </p>
 <p>The <strong>users.cfg</strong> file on your server may not update until your server has been stopped/restarted.</p>
-<p>You have successfully added new admin/moderator to your RUST server and those users will now have access to admin commands in-game!</p>
+<p>You have successfully added a new admin/moderator to your Rust server, and those users will now have access to admin commands in-game!</p>
 
   
     
@@ -5873,7 +5891,7 @@ moderatorid 76812312312312314 "Fragnet4"  </p>
         <span class="md-icon" title="Date of last update">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
         </span>
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-07-04</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-08-30</span>
       </span>
     
     
@@ -5909,7 +5927,7 @@ moderatorid 76812312312312314 "Fragnet4"  </p>
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Index" rel="prev">
+        <a href="../How_to_install_oxide_and_umod_plugins/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Installing Oxide plugins on the server" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -5918,20 +5936,20 @@ moderatorid 76812312312312314 "Fragnet4"  </p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Index
+              Installing Oxide plugins on the server
             </div>
           </div>
         </a>
       
       
         
-        <a href="../change-server-name/" class="md-footer__link md-footer__link--next" aria-label="Next: Change server name" rel="next">
+        <a href="../change-server-name/" class="md-footer__link md-footer__link--next" aria-label="Next: How to change your server name" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Change server name
+              How to change your server name
             </div>
           </div>
           <div class="md-footer__button md-icon">
