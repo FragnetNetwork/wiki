@@ -12,7 +12,7 @@
 
 4. Then upload the plugin in that directory by clicking on upload or just drag and dropping the file.
 
-![](../images/upload-plugin.png)
+![Upload Plugin](../images/upload-plugin.png)
 
 5. Once it has been uploaded, Start/Restart your server, and it has been installed.
 

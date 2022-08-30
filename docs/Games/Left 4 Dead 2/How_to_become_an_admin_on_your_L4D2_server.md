@@ -48,6 +48,6 @@ Admins
 }
 ```
 
-![](../images/example-admin.png)
+![Example Admin](../images/example-admin.png)
 
 5. Once done, click on **Save Content** and Start/Restart your server.

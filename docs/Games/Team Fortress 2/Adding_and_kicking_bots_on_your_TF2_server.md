@@ -2,7 +2,8 @@ There are two ways to add bots to your server, via the server.cfg or via console
 In this guide, we'll explain both methods.
 # Adding Bots via the server.cfg
 1. Navigate to your File Manage and go to **tf => cfg** directory.
-![](../images/file-manager.png) 
+![File Manager](../images/file-manager.png) 
+
 2. Open up the **server.cfg** and we will need to add these lines:
 ```
 tf_bot_quota "number" Choose any number you want
@@ -10,7 +11,8 @@ tf_bot_auto_vacate "1"
 tf_bot_quota_mode "fill"
 ```
 It should look something like this:
-![](../images/example-bots.png)
+![Example Bots](../images/example-bots.png)
+
 3. Once done, click on **Save Content** and **Start** the server, and the server should be filled with the chosen amount of bots.
 
 # Adding bots via console commands
@@ -26,7 +28,7 @@ tf_bot_add number team class
 
 Example command: ```tf_bot_add 2 red soldier```
 And it should look like this:
-![](../mages/example-command.png)
+![Example Command](../mages/example-command.png)
 
 # Kicking bots from your server
 

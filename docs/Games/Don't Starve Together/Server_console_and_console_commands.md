@@ -12,7 +12,7 @@ This is the official wiki with all of the console commands.
 
 3. I have chosen a simple command to test `c_goadventuring()`, this one gives you a starter pack of goodies. 
 You can choose any other command, open up your console and type/paste the command and press **Enter**.
-![](../images/example-console-command.png)
+![Example Console Command](../images/example-console-command.png)
 And the server will execute the command.
 
 That’s it! You have now learned how to issue console commands on the server.

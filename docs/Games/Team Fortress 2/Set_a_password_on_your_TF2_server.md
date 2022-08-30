@@ -4,6 +4,6 @@
 
 2. Find the **SERVER PASSWORD** variable and change the password to anything you want
 
-![](../images/server-password.png)
+![Server Password](../images/server-password.png)
 
 3. Once the password has been added/changed **Start/Restart** your server.

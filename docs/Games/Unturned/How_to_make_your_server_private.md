@@ -2,7 +2,7 @@
 ![Configure](../images/settings.png)
 
 2. Once there, scroll down and find **SERVER PASSWORD** variable.
-![](../images/server-password.png)
+![Server Password](../images/server-password.png)
 
 3. Type in a password of your choice and that’s it. 
 

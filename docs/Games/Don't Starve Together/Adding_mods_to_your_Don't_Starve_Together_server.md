@@ -14,7 +14,7 @@ Let's establish what command we need for this to work.
 ServerModSetup("ModID")
 ```
 It should look something like this now, the ModID will be changed with the wanted mods ID:
-![](../images/server-mod-setup.png)
+![Server Mod Setup](../images/server-mod-setup.png)
 
 And the easiest way to find it is to go to the mods Steam Workshop page.
 
@@ -67,7 +67,7 @@ ServerModCollectionSetup("Workshop_Collection_ID")
 ```
 Here is an example for the **dedicated_server_mods_setup.lua** :
 
-![](../images/mod-collection.png)
+![Mod Collection](../images/mod-collection.png)
 
 # Configuring your mods
 
@@ -99,7 +99,7 @@ And then on **Open World Folder**.
 6. Once there, upload the file to the same folder: 
 `DoNotStarveTogether => config => server => Master` 
 
-![](../images/directory.png)
+![Directory](../images/directory.png)
 
 But before that, rename the modoverrides.lua on your gamepanel or delete it if it isn't needed.
 

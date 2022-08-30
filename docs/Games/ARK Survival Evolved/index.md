@@ -35,4 +35,3 @@ An in-depth steps to configure your ARK Survival Evolved server.
 |          **[How to change name of server](How_to_change_name_of_server.md)**          |
 | **[How to change server map](How_to_change_server_map.md)**                           |
 | **[How to connect to the server](How_to_connect_to_the_server.md)**                   |
-| **[How to give a player admin privileges](How_to_give_a_player_admin_privileges.md)** |

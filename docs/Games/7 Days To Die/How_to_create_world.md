@@ -1,12 +1,12 @@
-# **Create a new world, but keep the old one**
+# Create a new world, but keep the old one
 
 **Step 1:** Log in to your account on our [Fragify panel](https://panel.fragify.net/auth/login) and find your 7 Days To Die server.  
-**Step 2:** Navigate to **Configure** and find **Game World** variable. Set it to any world that you would like for the server to load. You can also switch **World Gen Size**, **World Seed**, and **Game Name**.
+**Step 2:** Navigate to **Configure** and find the **Game World** variable. Set it to any world you would like the server to load. You can also switch **World Gen Size**, **World Seed**, and **Game Name**.
 
-**Step 3:** Restart the server and new world will be generated. =)
+**Step 3:** Restart the server, and new world will be generated. =)
 
->Keep in mind that RWG world can take longer time to generate depending on the value of **World Gen Size**. 
-When setting the higher value, the server will start generating a large map size, which will take long to generate / download / load the map.
+>Keep in mind that RWG world can take longer to generate depending on the value of **World Gen Size**. 
+When setting the higher value, the server will start generating a large map size, which will take a long to generate / download / load the map.
 
 # **Removing old worlds**
 
@@ -20,12 +20,12 @@ When setting the higher value, the server will start generating a large map size
 
 **Step 4:** Start the server.
 
-# **Perform a full wipe of your server**
+# **Perform a complete wipe of your server**
 
 **Step 1:** Log in to your account on our [Fragify panel](https://panel.fragify.net/auth/login) and find your 7 Days To Die server.  
 
-**Step 2:** Navigate to **Advanced** option on the left-side menu. Make sure to click on consent **I understand this will delete all of my files** and the new button **Wipe Server** will appear.  
+**Step 2:** Navigate to the **Advanced** option on the left-side menu. Make sure to click on consent **I understand this will delete all of my files** and the new button **Wipe Server** will appear.  
 
 ![Wipe Server](../images/wipe-server.png)
 
-**Step 3:** Click on **Wipe Server** and your server will be completely wiped. 
+**Step 3:** Click on **Wipe Server**, and your server will be completely wiped. 

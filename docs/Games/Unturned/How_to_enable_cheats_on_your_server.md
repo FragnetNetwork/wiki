@@ -6,6 +6,6 @@ Turning on cheats on your Unturned server is more straightforward with our game 
 
 2. Click on the option, which will show you a drop-down menu where you can choose **ON**.
 
-![](../images/enable-cheats.png)
+![Enable Cheats](../images/enable-cheats.png)
 
 3. After the cheats have been set to ON, Start/Restart your server and connect to it.

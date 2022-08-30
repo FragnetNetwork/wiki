@@ -33,5 +33,5 @@ Admins
   }
 }
 ```
-![](../images/example-admin.png)
+![Example Admin](../images/example-admin.png)
 Once done, click on **Save Content** and Start/Restart your server.
