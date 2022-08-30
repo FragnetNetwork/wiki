@@ -33,4 +33,4 @@ An in-depth steps to configure your Project Zomboid server.
 |-------------------------------------------------------------------------------------------------------------------------------|
 | **[Adding admins Project Zomboid](Adding_admins_Project_Zomboid.md)**                                                         |
 | **[Creating a whitelist](Creating_a_whitelist.md)**                                                                           |
-| **[How to add admins](How_to_add_admins.md)**                                                                                 |
+| **[How to add and enable mods](How_to_add_and_enable_mods.md)**                                                                                 |
