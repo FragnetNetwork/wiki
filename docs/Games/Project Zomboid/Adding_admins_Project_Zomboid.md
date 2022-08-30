@@ -8,18 +8,18 @@ You can find your server's console on the main page after selecting your server 
 
 2. You can see the input field with **Type a command...** under your server's console.
 
-![Server Console](images/server-console.png)
+![Server Console](../images/server-console.png)
 
 3. Join your server and return to the Fragify panel. Type the following command:
 ```
 setaccesslevel usernameOfPlayer admin
 ```
-![Admin Console](images/admin-console.png)
+![Admin Console](../images/admin-console.png)
 
 You will see as a confirmation the following text in the console:
-![Admin Confirmation](images/admin-confirmation.png)
+![Admin Confirmation](../images/admin-confirmation.png)
 Afterwards, you will see next to your username **Admin** tag marked in red colour.
-![Admin In-Game](images/admin-game.png)
+![Admin In-Game](../images/admin-game.png)
 
 There are also different access levels apart from **Admin**. 
 The list of all access levels and their abilities:
@@ -93,11 +93,11 @@ The server will look in your zomboid database folder (`/pzserver/db`) for a data
 
 2. Stop your server and navigate to the **File Manager** option on the left-side menu.
 
-![File Manager](images/file-manager.png)
+![File Manager](../images/file-manager.png)
 
 3. Go to the following directory: `pzserver/db` and you will find **PZServer.db** file. You will need to click on **...** => **Download** option.
 
-![PZServer Location](images/pzserver-location.png)
+![PZServer Location](../images/pzserver-location.png)
 
 4. Next, download this: [SQLite Admin](http://sqliteadmin.orbmu2k.de/) It's for editing file based sql (sqlite) databases.
 
@@ -105,9 +105,9 @@ The server will look in your zomboid database folder (`/pzserver/db`) for a data
 
 6. Then click the **Edit Data** tab, and you can put data in. All you need to do is to tick the “Admin” checkbox next to the players that you want to have admin rights.  
 Example:
-![SQLite Instructions](images/sqlite-instructions.png) Close the database once you've made your changes, and it'll auto save.   
+![SQLite Instructions](../images/sqlite-instructions.png) Close the database once you've made your changes, and it'll auto save.   
 
 7. Upload the modified file onto the server to replace the existing one by clicking **Upload** button or using the drag and drop function.
-![Upload](images/upload.png)
+![Upload](../images/upload.png)
 
 8. Start the server, and the player should have admin privileges.

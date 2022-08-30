@@ -1,39 +1,42 @@
-#How to add header image and server description
+# How to add header image and server description
 
 Header Image
 ------------
 
-It is possible to have a header image on your RUST server. The header image adds a nice touch to your server and is a great way to show what your server is about before someone joins.  
-Header image of your server appear when you click on the server in the RUST server browser.
+It is possible to have a header image on your Rust server. The header image adds a nice touch to your server and is a great way to show what your server is about before someone joins.  
+Header image of your server appear when you click on the server in the Rust server browser.
 
 ### Preparing the Image Header
 
 In order for the image to be loaded in the header, there are few rules that need to be followed.
 
-*   The image size must be 512x256
-*   The image must be uploaded to a public image sharing website. We recommend using Imgur.
-
-Once you upload the image, copy the Imgur image’s link.
+*   The image size must be **512x256** and **.png** or **.jpg** formats.
 
 There are quite a few online tools that can be used in case you need to resize your image.  
-We recommend using Picresize. Simply upload the image and proceed to editing it.  
-Under the Resize your picture, select custom size and write the resolution mentioned above.
+We recommend using Picresize https://picresize.com/. Simply upload the image and proceed to editing it.  
+Under the Resize your picture, select **Custom Size...** and write the resolution mentioned above. Make sure that **Image File Format** set to **PNG** or **JPG**. After all changes made, click on **I'm done, resize my picture!** button.
+
+![Picresize Instructions](images/picresize-instructions.png)
+
+*   The image must be uploaded to a public image sharing website. We recommend using [Imgur](https://imgur.com/). You can upload image by using the drag and drop function.
+
+Once you upload the image, copy the Imgur image’s link by right-click on the image and select **Copy image address** option.
+
+![Example Imgur](images/example-imgur.png)
 
 ### Adding the Image Header to your server
 
-*   Go to your RUST service on the Fragnet Game Panel
-*   Navigate to Commandline Manager -> Custom commandline
-*   Edit your existing Custom commandline or create a new one
-*   Under the -server.headerimage parameter paste your image link  
-    Example: [https://i.imgur.com/unknwn](https://i.imgur.com/unknwn)
-*   Add the .jpg extension at the end of your link  
-    Example: [https://i.imgur.com/unknwn.jpg](https://i.imgur.com/unknwn.jpg)
-*   Once done, tick the checkbox before the -server.headerimage parameter and press Save.
+*   Login to the [Fragify panel](https://panel.fragify.net/auth/login) and select your Rust server.
+*   Navigate to **Configure** option on the left-side menu and look for variable **Server Image**. Paste the link of your image uploaded to the Imgur.
+
+![Configure](images/configure.png)
+
+![Server Image](images/server-image.png)
+
 *   Restart the server so the changes can take effect.
 
-You should be able to see your header image once you click on your server in the RUST Server browser!
+You should be able to see your header image once you click on your server in the Rust Server browser!
 
-  
 
 Server Description
 ------------------
@@ -51,23 +54,17 @@ It can be used for various things but most commonly used for:
 
 Just like the Header Image, server description is also set via Custom Commandline
 
-*   Go to your RUST service on the Fragnet Game Panel
-*   Navigate to Commandline Manager -> Custom commandline
-*   Edit your existing Custom commandline or create a new one
-*   Under the -server.description parameter write the text you want to have
-*   Once done, tick the checkbox before the -server.description parameter and press Save
+*   Login to the [Fragify panel](https://panel.fragify.net/auth/login) and select your Rust server.
+*   Navigate to **Configure** option on the left-side menu and look for **Description** variable. You can type any information that you would like to appear in your server's description in-game. 
+
+![Configure](images/configure.png)
+
+![Description](images/description.png)
+
 *   Restart the server so the changes can take effect.
 
 ### Formatting the text
 
 **New Lines**
 
-If you want text to appear on different lines, you can add the characters \\n to create a new line directly below it. You don't need to add spaces around the \\n, they can be directly touching text on either side.
-
-For example, adding the text below to the server.description parameter…
-
-Testing...\\nStill testing...\\nHosted by Fragnet.net
-
-…will create the following description for the server, when viewed in the in-game listings:
-
-![Header](../images/serverinfo.png)
+If you want text to appear on different lines, you can add the characters **\\n** to create a new line directly below it. You don't need to add spaces around the **\\n**, they can be directly touching text on either side.

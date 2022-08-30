@@ -1,24 +1,17 @@
-#How to change your server name
+# How to change your server name
 
-Just like the other parameters that are adjusted via Custom commandline parameter for RUST, server name option is not an exception.
+Just like the other parameters that are adjusted via variables in **Configure** option for Rust, server name option is not an exception.
 
 To change your RUST server name simply follow these steps:
 
-*   Go to your RUST service on the Fragnet Game Panel
-*   Navigate to Commandline Manager -> Custom commandline
-*   Edit your existing Custom commandline or create a new one
-*   Under the \-server.hostname parameter simply insert the name you would like your server to have
-*   Once done, tick the checkbox before the -server.hostname parameter and press Save.
+*   Login to the [Fragify panel](https://panel.fragify.net/auth/login) and select your Rust server.
+
+*   Navigate to **Configure** option on the left-side menu.
+
+![Configure](../images/configure.png)
+
+*   Look for **Server Name** variable and set it to any name that you would like for your server to have.
+
+![Server Name](../images/server-name.png)
+
 *   Restart the server so the changes can take effect.
-
-For example, adding the text below to the server.hostname parameter…
-
-  
-Fragnet Test Server
-
-  
-![Servername1](../images/servername1.png)
-
-…will set your server name to the following text and your server name will be visible in the server browser like this:
-
-![Servername2](../images/servername2.png)

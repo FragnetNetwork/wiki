@@ -34,7 +34,7 @@ An in-depth steps to configure your Rust server.
 | **[How to add admins](adding-admins.md)**                                                                                     |
 | **[Change server name](change-server-name.md)**                                                                               |
 | **[Header and server description](header-and-server-description.md)**                                                         |
-| **[How to install Oxide](install-oxide.md)**                                                                                  |
+| **[How to install Oxide and uMod plugins](How_to_install_oxide_and_umod_plugins.md)**                                                                                  |
 | **[Installing RustIO](installing-rustio.md)**                                                                                 |
 | **[Loading custom map](load-custom-map.md)**                                                                                  |
 | **[How to wipe Rust server](rust-wipe.md)**                                                                                   |

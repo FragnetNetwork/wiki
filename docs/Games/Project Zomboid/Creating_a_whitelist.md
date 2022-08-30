@@ -6,24 +6,24 @@ The server will look in your zomboid database folder (`pzserver/db`) for a datab
 
 1. Stop your server and navigate to **File Manager** option on the left-side menu.
 
-![File Manager](images/file-manager.png)
+![File Manager](../images/file-manager.png)
 
 2. Go to the following directory: `pzserver/db` and you will find **PZServer.db** file. You will need to click on **...** => **Download** option.
 
-![PZServer Location](images/pzserver-location.png)
+![PZServer Location](../images/pzserver-location.png)
 
 3. Next, download this: [SQLite Admin](http://sqliteadmin.orbmu2k.de/) It's for editing file based sql (sqlite) databases.
 
 4. Go into Tables, click whitelist, expand it out and click a random field (say id)
 
 5. Click the Edit Data tab to put data in. All you need to do to add a user is click the + icon, and then (in order) put **PZServer** into the 'world' column, then add a username and password into their respective columns. Close the database once you've made changes, and it'll auto save.   
-![SQLite Instructions](images/sqlite-instruction1.png)
+![SQLite Instructions](../images/sqlite-instruction1.png)
 
 6. Upload the modified file onto the server to replace the existing one with the **Upload** button or drag and drop function.
-![Upload](images/upload.png)
+![Upload](../images/upload.png)
 
 7. Now navigate to **Configure** option on the left-side menu and set **Public Access** variable to **false**. 
-![Configure](images/configure.png)
-![Public Access](images/public-access.png)
+![Configure](../images/configure.png)
+![Public Access](../images/public-access.png)
 
 8. Start your server, and whitelist will be enabled.
