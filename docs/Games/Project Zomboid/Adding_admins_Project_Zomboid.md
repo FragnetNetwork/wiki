@@ -4,13 +4,13 @@ There are 2 ways to make a player an admin which we will explain in this article
 
 You can find your server's console on the main page after selecting your server on the Fragify panel.
 
-1. Login to the [Fragify panel](https://panel.fragify.net/auth/login) and select your Project Zomboid server.
+1\. Login to the [Fragify panel](https://panel.fragify.net/auth/login) and select your Project Zomboid server.
 
-2. You can see the input field with **Type a command...** under your server's console.
+2\. You can see the input field with **Type a command...** under your server's console.
 
 ![Server Console](../images/server-console.png)
 
-3. Join your server and return to the Fragify panel. Type the following command:
+3\. Join your server and return to the Fragify panel. Type the following command:
 ```
 setaccesslevel usernameOfPlayer admin
 ```
@@ -25,6 +25,7 @@ There are also different access levels apart from **Admin**.
 The list of all access levels and their abilities:
 
 **Observer**
+
 * Toggle god mod (on himself only)
 * Toggle invisible (on himself only)
 * See players connected (/players)
@@ -43,6 +44,7 @@ The list of all access levels and their abilities:
 *  Can see players stats (name, skill, traits...) with click on player -> Check Stats (but can't modify them)
 
 **GM**
+
 *  Everything an Observer can use, plus:
 *  Toggle god mod (on himself and others)
 *  Toggle invisible (on himself and others)
@@ -54,6 +56,7 @@ The list of all access levels and their abilities:
 *  Add xp
 
 **Overseer**
+
 *  Everything a GM can use, plus:
 *  Create horde
 *  Kick user
@@ -65,6 +68,7 @@ The list of all access levels and their abilities:
 *  Can ban a player from /all chat
 
 **Moderator**
+
 * Everything an Overseer can use, plus:
 *  Ban/Unban user (including steam ID)
 *  Manipulate whitelist (/adduser, /addusertowhitelist, /addalltowhitelist, /removeuserfromwhitelist
@@ -72,6 +76,7 @@ The list of all access levels and their abilities:
 *  Can setup safehouses
 
 **Admin**
+
 *  Everything a Moderator can use, plus:
 *  Save world
 *  Quit world
@@ -89,25 +94,25 @@ To add an admin to your Project Zomboid server, you will need to edit the server
   
 The server will look in your zomboid database folder (`/pzserver/db`) for a database file (**PZServer.db**) with username / passwords to authorize people trying to connect to your server.
 
-1. Login to the [Fragify panel](https://panel.fragify.net/auth/login) and select your Project Zomboid server.
+1\. Login to the [Fragify panel](https://panel.fragify.net/auth/login) and select your Project Zomboid server.
 
-2. Stop your server and navigate to the **File Manager** option on the left-side menu.
+2\. Stop your server and navigate to the **File Manager** option on the left-side menu.
 
 ![File Manager](../images/file-manager.png)
 
-3. Go to the following directory: `pzserver/db` and you will find **PZServer.db** file. You will need to click on **...** => **Download** option.
+3v. Go to the following directory: `pzserver/db` and you will find **PZServer.db** file. You will need to click on **...** => **Download** option.
 
 ![PZServer Location](../images/pzserver-location.png)
 
-4. Next, download this: [SQLite Admin](http://sqliteadmin.orbmu2k.de/) It's for editing file based sql (sqlite) databases.
+4\. Next, download this: [SQLite Admin](http://sqliteadmin.orbmu2k.de/) It's for editing file based sql (sqlite) databases.
 
-5. Go into **Tables**, click **whitelist**, expand it out and click a random field (say id).
+5\. Go into **Tables**, click **whitelist**, expand it out and click a random field (say id).
 
-6. Then click the **Edit Data** tab, and you can put data in. All you need to do is to tick the “Admin” checkbox next to the players that you want to have admin rights.  
+6\. Then click the **Edit Data** tab, and you can put data in. All you need to do is to tick the “Admin” checkbox next to the players that you want to have admin rights.  
 Example:
 ![SQLite Instructions](../images/sqlite-instructions.png) Close the database once you've made your changes, and it'll auto save.   
 
-7. Upload the modified file onto the server to replace the existing one by clicking **Upload** button or using the drag and drop function.
+7\. Upload the modified file onto the server to replace the existing one by clicking **Upload** button or using the drag and drop function.
 ![Upload](../images/upload.png)
 
-8. Start the server, and the player should have admin privileges.
+8\. Start the server, and the player should have admin privileges.

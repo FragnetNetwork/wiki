@@ -5,7 +5,7 @@ You can read more information about:
 
 * tModLoader: https://tmodloader.net/
 
-1. We recommend making a backup of your world files that can be accessed via **File Manager**. The default location: `saves/Worlds`. 
+1\. We recommend making a backup of your world files that can be accessed via **File Manager**. The default location: `saves/Worlds`. 
 
 ![File Manager](../images/file-manager.png)
 
@@ -19,16 +19,16 @@ You can also use **Backups** function which can be found on the left-side menu. 
 
 ![Backup Instructions](../images/backup-instructions.png)
 
-2. Go to **Templates** on the left-side menu and select **Server Type** that you would like to install.
+2\. Go to **Templates** on the left-side menu and select **Server Type** that you would like to install.
 
 ![Templates](../images/templates.png)
 
-3. Click on **Don't Delete Files**, so it will become **Delete Files**.
+3\. Click on **Don't Delete Files**, so it will become **Delete Files**.
 > NOTE: Your server may fail to startup if not all files deleted before installation. 
 
 ![Delete Files](../images/delete-files.png)
 
-4. Click on **Install** and start your server.
+4\. Click on **Install** and start your server.
 
 ![Install Template](../images/install-template.png)
 
