@@ -38,3 +38,5 @@ An in-depth steps to configure your Rust server.
 | **[Installing RustIO](installing-rustio.md)**                                                                                 |
 | **[Loading custom map](load-custom-map.md)**                                                                                  |
 | **[How to wipe Rust server](rust-wipe.md)**                                                                                   |
+| **[How to connect to your Rust server](How_to_connect_to_your_server.md)**                                                                                   |
+| **[How to pair your server with Rust+ app](How_to_pair_your_server_with_Rust+_app.md)**                                                                                   |
