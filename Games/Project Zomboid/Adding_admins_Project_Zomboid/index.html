@@ -984,8 +984,6 @@
       
         
       
-        
-      
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -1138,59 +1136,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2_8" type="checkbox" id="__nav_5_2_8" >
-        
-        
-          
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../7%20Days%20To%20Die/adding-mods/" class="md-nav__link ">
-              
-  
-  <span class="md-ellipsis">
-    Adding mods
-  </span>
-  
-
-            </a>
-            
-          </div>
-        
-        <nav class="md-nav" aria-label="Adding mods" data-md-level="3">
-          <label class="md-nav__title" for="__nav_5_2_8">
-            <span class="md-nav__icon md-icon"></span>
-            Adding mods
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -5811,117 +5756,99 @@
 <p>There are 2 ways to make a player an admin which we will explain in this article.</p>
 <h1 id="1-server-console">#1 Server Console</h1>
 <p>You can find your server's console on the main page after selecting your server on the Fragify panel.</p>
-<ol>
-<li>
-<p>Login to the <a href="https://panel.fragify.net/auth/login">Fragify panel</a> and select your Project Zomboid server.</p>
-</li>
-<li>
-<p>You can see the input field with <strong>Type a command...</strong> under your server's console.</p>
-</li>
-</ol>
+<p>1. Login to the <a href="https://panel.fragify.net/auth/login">Fragify panel</a> and select your Project Zomboid server.</p>
+<p>2. You can see the input field with <strong>Type a command...</strong> under your server's console.</p>
 <p><img alt="Server Console" src="../images/server-console.png" /></p>
-<ol>
-<li>Join your server and return to the Fragify panel. Type the following command:
+<p>3. Join your server and return to the Fragify panel. Type the following command:
 <div class="highlight"><pre><span></span><code>setaccesslevel usernameOfPlayer admin
 </code></pre></div>
-<img alt="Admin Console" src="../images/admin-console.png" /></li>
-</ol>
+<img alt="Admin Console" src="../images/admin-console.png" /></p>
 <p>You will see as a confirmation the following text in the console:
 <img alt="Admin Confirmation" src="../images/admin-confirmation.png" />
 Afterwards, you will see next to your username <strong>Admin</strong> tag marked in red colour.
 <img alt="Admin In-Game" src="../images/admin-game.png" /></p>
 <p>There are also different access levels apart from <strong>Admin</strong>. 
 The list of all access levels and their abilities:</p>
-<p><strong>Observer</strong>
-* Toggle god mod (on himself only)
-* Toggle invisible (on himself only)
-* See players connected (/players)
-* Teleport to a player (can't teleport a player elsewhere)
-*  Can toggle noclip (on himself only)
-* Teleport to coordinates
-*  See server options
-*  Can open locked doors
-*  Can go inside safehouses
-*  Can't be kicked if too laggy
-*  Can always join server (even if full)
-*  Can talk even being invisible
-*  Sees invisible players
-*  Can't be hit by players
-*  Log directly invisible/invincible
-*  Can see players stats (name, skill, traits...) with click on player -&gt; Check Stats (but can't modify them)</p>
-<p><strong>GM</strong>
-*  Everything an Observer can use, plus:
-*  Toggle god mod (on himself and others)
-*  Toggle invisible (on himself and others)
-*  Can toggle noclip (on himself and others)
-*  Teleport to a player to another player<br />
-*  Use /alarm, /gunshot, /thunder and /chopper
-*  Start/Stop rain
-*  Add item
-*  Add xp</p>
-<p><strong>Overseer</strong>
-*  Everything a GM can use, plus:
-*  Create horde
-*  Kick user
-*  Display server message
-*  See connection info of a player
-*  Disconnect a player by connection number (/disconnect)
-*  Use /nightlengthmodifier
-*  Can modify player stats in the player stats UI
-*  Can ban a player from /all chat</p>
-<p><strong>Moderator</strong>
-* Everything an Overseer can use, plus:
-*  Ban/Unban user (including steam ID)
-*  Manipulate whitelist (/adduser, /addusertowhitelist, /addalltowhitelist, /removeuserfromwhitelist
-*  Change access level (can't set admin)
-*  Can setup safehouses</p>
-<p><strong>Admin</strong>
-*  Everything a Moderator can use, plus:
-*  Save world
-*  Quit world
-*  Change access level (including admin)
-*  Reload server options
-*  Change server options
-*  Send pulse
-*  Reload Lua files
-*  Bypass Lua checksum</p>
+<p><strong>Observer</strong></p>
+<ul>
+<li>Toggle god mod (on himself only)</li>
+<li>Toggle invisible (on himself only)</li>
+<li>See players connected (/players)</li>
+<li>Teleport to a player (can't teleport a player elsewhere)</li>
+<li>Can toggle noclip (on himself only)</li>
+<li>Teleport to coordinates</li>
+<li>See server options</li>
+<li>Can open locked doors</li>
+<li>Can go inside safehouses</li>
+<li>Can't be kicked if too laggy</li>
+<li>Can always join server (even if full)</li>
+<li>Can talk even being invisible</li>
+<li>Sees invisible players</li>
+<li>Can't be hit by players</li>
+<li>Log directly invisible/invincible</li>
+<li>Can see players stats (name, skill, traits...) with click on player -&gt; Check Stats (but can't modify them)</li>
+</ul>
+<p><strong>GM</strong></p>
+<ul>
+<li>Everything an Observer can use, plus:</li>
+<li>Toggle god mod (on himself and others)</li>
+<li>Toggle invisible (on himself and others)</li>
+<li>Can toggle noclip (on himself and others)</li>
+<li>Teleport to a player to another player  </li>
+<li>Use /alarm, /gunshot, /thunder and /chopper</li>
+<li>Start/Stop rain</li>
+<li>Add item</li>
+<li>Add xp</li>
+</ul>
+<p><strong>Overseer</strong></p>
+<ul>
+<li>Everything a GM can use, plus:</li>
+<li>Create horde</li>
+<li>Kick user</li>
+<li>Display server message</li>
+<li>See connection info of a player</li>
+<li>Disconnect a player by connection number (/disconnect)</li>
+<li>Use /nightlengthmodifier</li>
+<li>Can modify player stats in the player stats UI</li>
+<li>Can ban a player from /all chat</li>
+</ul>
+<p><strong>Moderator</strong></p>
+<ul>
+<li>Everything an Overseer can use, plus:</li>
+<li>Ban/Unban user (including steam ID)</li>
+<li>Manipulate whitelist (/adduser, /addusertowhitelist, /addalltowhitelist, /removeuserfromwhitelist</li>
+<li>Change access level (can't set admin)</li>
+<li>Can setup safehouses</li>
+</ul>
+<p><strong>Admin</strong></p>
+<ul>
+<li>Everything a Moderator can use, plus:</li>
+<li>Save world</li>
+<li>Quit world</li>
+<li>Change access level (including admin)</li>
+<li>Reload server options</li>
+<li>Change server options</li>
+<li>Send pulse</li>
+<li>Reload Lua files</li>
+<li>Bypass Lua checksum</li>
+</ul>
 <p>If you want to see any other available commands in console, you can type <code>help</code>.</p>
 <h1 id="2-editing-pzserverdb-file">#2 Editing PZServer.db file</h1>
 <p>To add an admin to your Project Zomboid server, you will need to edit the serverPZ.db.  </p>
 <p>The server will look in your zomboid database folder (<code>/pzserver/db</code>) for a database file (<strong>PZServer.db</strong>) with username / passwords to authorize people trying to connect to your server.</p>
-<ol>
-<li>
-<p>Login to the <a href="https://panel.fragify.net/auth/login">Fragify panel</a> and select your Project Zomboid server.</p>
-</li>
-<li>
-<p>Stop your server and navigate to the <strong>File Manager</strong> option on the left-side menu.</p>
-</li>
-</ol>
+<p>1. Login to the <a href="https://panel.fragify.net/auth/login">Fragify panel</a> and select your Project Zomboid server.</p>
+<p>2. Stop your server and navigate to the <strong>File Manager</strong> option on the left-side menu.</p>
 <p><img alt="File Manager" src="../images/file-manager.png" /></p>
-<ol>
-<li>Go to the following directory: <code>pzserver/db</code> and you will find <strong>PZServer.db</strong> file. You will need to click on <strong>...</strong> =&gt; <strong>Download</strong> option.</li>
-</ol>
+<p>3v. Go to the following directory: <code>pzserver/db</code> and you will find <strong>PZServer.db</strong> file. You will need to click on <strong>...</strong> =&gt; <strong>Download</strong> option.</p>
 <p><img alt="PZServer Location" src="../images/pzserver-location.png" /></p>
-<ol>
-<li>
-<p>Next, download this: <a href="http://sqliteadmin.orbmu2k.de/">SQLite Admin</a> It's for editing file based sql (sqlite) databases.</p>
-</li>
-<li>
-<p>Go into <strong>Tables</strong>, click <strong>whitelist</strong>, expand it out and click a random field (say id).</p>
-</li>
-<li>
-<p>Then click the <strong>Edit Data</strong> tab, and you can put data in. All you need to do is to tick the “Admin” checkbox next to the players that you want to have admin rights.<br />
+<p>4. Next, download this: <a href="http://sqliteadmin.orbmu2k.de/">SQLite Admin</a> It's for editing file based sql (sqlite) databases.</p>
+<p>5. Go into <strong>Tables</strong>, click <strong>whitelist</strong>, expand it out and click a random field (say id).</p>
+<p>6. Then click the <strong>Edit Data</strong> tab, and you can put data in. All you need to do is to tick the “Admin” checkbox next to the players that you want to have admin rights.<br />
 Example:
 <img alt="SQLite Instructions" src="../images/sqlite-instructions.png" /> Close the database once you've made your changes, and it'll auto save.   </p>
-</li>
-<li>
-<p>Upload the modified file onto the server to replace the existing one by clicking <strong>Upload</strong> button or using the drag and drop function.
+<p>7. Upload the modified file onto the server to replace the existing one by clicking <strong>Upload</strong> button or using the drag and drop function.
 <img alt="Upload" src="../images/upload.png" /></p>
-</li>
-<li>
-<p>Start the server, and the player should have admin privileges.</p>
-</li>
-</ol>
+<p>8. Start the server, and the player should have admin privileges.</p>
 
   
     
@@ -5937,7 +5864,7 @@ Example:
         <span class="md-icon" title="Date of last update">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
         </span>
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-08-30</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-08-31</span>
       </span>
     
     

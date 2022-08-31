@@ -979,8 +979,6 @@
       
         
       
-        
-      
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -1133,59 +1131,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2_8" type="checkbox" id="__nav_5_2_8" >
-        
-        
-          
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../7%20Days%20To%20Die/adding-mods/" class="md-nav__link ">
-              
-  
-  <span class="md-ellipsis">
-    Adding mods
-  </span>
-  
-
-            </a>
-            
-          </div>
-        
-        <nav class="md-nav" aria-label="Adding mods" data-md-level="3">
-          <label class="md-nav__title" for="__nav_5_2_8">
-            <span class="md-nav__icon md-icon"></span>
-            Adding mods
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -5804,38 +5749,20 @@
 <p>If you would like a private server where people need a valid user/pass to join, creating a whitelist is necessary.</p>
 <p>This is a bit more of a mess than it will be down the line, but once you're set up, it's pretty easy to manage.</p>
 <p>The server will look in your zomboid database folder (<code>pzserver/db</code>) for a database file (<strong>PZServer.db</strong>) with username / passwords to authorize people trying to connect to your server.</p>
-<ol>
-<li>Stop your server and navigate to <strong>File Manager</strong> option on the left-side menu.</li>
-</ol>
+<p>1. Stop your server and navigate to <strong>File Manager</strong> option on the left-side menu.</p>
 <p><img alt="File Manager" src="../images/file-manager.png" /></p>
-<ol>
-<li>Go to the following directory: <code>pzserver/db</code> and you will find <strong>PZServer.db</strong> file. You will need to click on <strong>...</strong> =&gt; <strong>Download</strong> option.</li>
-</ol>
+<p>2. Go to the following directory: <code>pzserver/db</code> and you will find <strong>PZServer.db</strong> file. You will need to click on <strong>...</strong> =&gt; <strong>Download</strong> option.</p>
 <p><img alt="PZServer Location" src="../images/pzserver-location.png" /></p>
-<ol>
-<li>
-<p>Next, download this: <a href="http://sqliteadmin.orbmu2k.de/">SQLite Admin</a> It's for editing file based sql (sqlite) databases.</p>
-</li>
-<li>
-<p>Go into Tables, click whitelist, expand it out and click a random field (say id)</p>
-</li>
-<li>
-<p>Click the Edit Data tab to put data in. All you need to do to add a user is click the + icon, and then (in order) put <strong>PZServer</strong> into the 'world' column, then add a username and password into their respective columns. Close the database once you've made changes, and it'll auto save. <br />
+<p>3. Next, download this: <a href="http://sqliteadmin.orbmu2k.de/">SQLite Admin</a> It's for editing file based sql (sqlite) databases.</p>
+<p>4. Go into Tables, click whitelist, expand it out and click a random field (say id)</p>
+<p>5. Click the Edit Data tab to put data in. All you need to do to add a user is click the + icon, and then (in order) put <strong>PZServer</strong> into the 'world' column, then add a username and password into their respective columns. Close the database once you've made changes, and it'll auto save. <br />
 <img alt="SQLite Instructions" src="../images/sqlite-instruction1.png" /></p>
-</li>
-<li>
-<p>Upload the modified file onto the server to replace the existing one with the <strong>Upload</strong> button or drag and drop function.
+<p>6. Upload the modified file onto the server to replace the existing one with the <strong>Upload</strong> button or drag and drop function.
 <img alt="Upload" src="../images/upload.png" /></p>
-</li>
-<li>
-<p>Now navigate to <strong>Configure</strong> option on the left-side menu and set <strong>Public Access</strong> variable to <strong>false</strong>. 
+<p>7. Now navigate to <strong>Configure</strong> option on the left-side menu and set <strong>Public Access</strong> variable to <strong>false</strong>. 
 <img alt="Configure" src="../images/configure.png" />
 <img alt="Public Access" src="../images/public-access.png" /></p>
-</li>
-<li>
-<p>Start your server, and whitelist will be enabled.</p>
-</li>
-</ol>
+<p>8. Start your server, and whitelist will be enabled.</p>
 
   
     
@@ -5851,7 +5778,7 @@
         <span class="md-icon" title="Date of last update">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
         </span>
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-08-30</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-08-31</span>
       </span>
     
     
