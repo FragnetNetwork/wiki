@@ -11,7 +11,7 @@ Adding Rust:IO to your server:
 
 *   Navigate to **File Manager** option on the left-side menu and go to `RustDedicated_Data/Managed` directory.
 
-![File Manager](images/file-manager.png)
+![File Manager](../images/file-manager.png)
 
 *   Make sure that **uMod/OxideMod** is installed, if not follow instructions from [here](install-oxide.md). It is important as it is a requirement for Rust:IO.
 
@@ -19,7 +19,7 @@ Adding Rust:IO to your server:
 
 *   Once downloaded, upload to `RustDedicated_Data/Managed` directory by clicking on **Upload** button or using the drag and drop function. 
 
-![RustIO Directory Upload](images/rustio-directory.png)
+![RustIO Directory Upload](../images/rustio-directory.png)
 
 * Simply start the server and this extension will load.
 

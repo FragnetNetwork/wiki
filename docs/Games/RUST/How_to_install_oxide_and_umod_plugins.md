@@ -9,9 +9,9 @@ There are many oxide plugins that can be installed on the server and which can i
 Oxide mod must be installed on your server in order plugins to run.  
 Simply navigate to **Configure** option on the left-side menu on Fragify Panel and click on **OxideMod** variable to be enabled!  
 
-![Configure](images/configure.png)
+![Configure](../images/configure.png)
 
-![OxideMod Enabled](images/oxide-enabled.png)
+![OxideMod Enabled](../images/oxide-enabled.png)
 
 Start/Restart server for the oxide to be downloaded on the server. It will generate a new folder **oxide** in the main directory of your Rust server.
 
@@ -25,11 +25,11 @@ We have 2 methods that we can use for this: via **uMod Plugins** option on the l
 
 * Go to **uMod Plugins** and search for plugins that you would like for the server to have.
 
-![uMod Plugins](images/umod-plugins.png)
+![uMod Plugins](../images/umod-plugins.png)
 
 * Click on **Install** button on the plugins that you would like to install.
 
-![Install Plugin](images/install-plugin.png)
+![Install Plugin](../images/install-plugin.png)
 
 ### Method #2 Installing plugins via File Manager
 
@@ -37,7 +37,7 @@ We have 2 methods that we can use for this: via **uMod Plugins** option on the l
 
 *   Navigate to **File Manager**
 
-![File Manager](images/file-manager.png)
+![File Manager](../images/file-manager.png)
 
 *   Go to **oxide/plugins** directory 
 

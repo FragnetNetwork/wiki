@@ -16,22 +16,22 @@ There are quite a few online tools that can be used in case you need to resize y
 We recommend using Picresize https://picresize.com/. Simply upload the image and proceed to editing it.  
 Under the Resize your picture, select **Custom Size...** and write the resolution mentioned above. Make sure that **Image File Format** set to **PNG** or **JPG**. After all changes made, click on **I'm done, resize my picture!** button.
 
-![Picresize Instructions](images/picresize-instructions.png)
+![Picresize Instructions](../images/picresize-instructions.png)
 
 *   The image must be uploaded to a public image sharing website. We recommend using [Imgur](https://imgur.com/). You can upload image by using the drag and drop function.
 
 Once you upload the image, copy the Imgur image’s link by right-click on the image and select **Copy image address** option.
 
-![Example Imgur](images/example-imgur.png)
+![Example Imgur](../images/example-imgur.png)
 
 ### Adding the Image Header to your server
 
 *   Login to the [Fragify panel](https://panel.fragify.net/auth/login) and select your Rust server.
 *   Navigate to **Configure** option on the left-side menu and look for variable **Server Image**. Paste the link of your image uploaded to the Imgur.
 
-![Configure](images/configure.png)
+![Configure](../images/configure.png)
 
-![Server Image](images/server-image.png)
+![Server Image](../images/server-image.png)
 
 *   Restart the server so the changes can take effect.
 
@@ -57,9 +57,9 @@ Just like the Header Image, server description is also set via Custom Commandlin
 *   Login to the [Fragify panel](https://panel.fragify.net/auth/login) and select your Rust server.
 *   Navigate to **Configure** option on the left-side menu and look for **Description** variable. You can type any information that you would like to appear in your server's description in-game. 
 
-![Configure](images/configure.png)
+![Configure](../images/configure.png)
 
-![Description](images/description.png)
+![Description](../images/description.png)
 
 *   Restart the server so the changes can take effect.
 

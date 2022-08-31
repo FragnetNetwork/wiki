@@ -13,9 +13,9 @@ Just follow these simple steps:
 
 4.  Navigate to **Configure** option on the left-side menu and look for **Server Level URL** variable.
 
-![Configure](images/configure.png)
+![Configure](../images/configure.png)
 
-![Server Level URL](images/server-lvl-url.png)
+![Server Level URL](../images/server-lvl-url.png)
 
 5.  Paste the download link. Example:
 ``` 

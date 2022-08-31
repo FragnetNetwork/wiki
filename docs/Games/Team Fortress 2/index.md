@@ -33,7 +33,7 @@ An in-depth steps to configure your Team Fortress 2 server.
 |-----------------------------------------------------------------------------------------------------------------|
 | **[Adding and kicking bots on your TF2 server](Adding_and_kicking_bots_on_your_TF2_server.md)**                                             |
 | **[Adding workshop maps to your server](Adding_workshop_maps_to_your_server.md)**                 |
-| **[Edit voice server communication.md](Edit_voice_server_communication.md)**                                                             |
+| **[Edit voice server communication](Edit_voice_server_communication.md)**                                                             |
 | **[How to add admins on your TF2 server](How_to_add_admins_on_your_TF2_server.md)**                                                    |
 | **[How to ban and unban players on your server](How_to_ban_and_unban_players_on_your_server.md)**                                          |
 | **[How to connect to your TF2 server](How_to_connect_to_your_TF2_server.md)**                                                                                                                |
