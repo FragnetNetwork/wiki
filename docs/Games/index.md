@@ -51,7 +51,7 @@ Here you can find articles about our Games:
 - **[Minecraft](../Games/Minecraft/)**            
 - **[Procon Layer](../Games/Procon Layer/)**                 
 - **[Project Zomboid](../Games/Project Zomboid/)**
-- **[RUST](../Games/RUST/)**
+- **[Rust](../Games/RUST/)**
 - **[Satisfactory](../Games/Satisfactory/)**
 - **[Team Fortress 2](../Games/Team Fortress 2)**                                 
 - **[Terraria](../Games/Terraria/)**

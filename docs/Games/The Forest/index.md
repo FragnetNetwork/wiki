@@ -32,5 +32,5 @@ An in-depth steps to configure your Forest server.
 | **The Forest Knowledgebase Articles**                                                                                         |
 |-------------------------------------------------------------------------------------------------------------------------------|
 | **[Becoming admin on your Forest server](becoming-adming-the-forest.md)**                                                     |
-| **[Connecting to the forest server](connecting-to-the-forest-server.md)**                                                     |
+| **[Connecting to the Forest server](connecting-to-the-forest-server.md)**                                                     |
 | **[Setup your The Forest server](setup-your-the-forest-server.md)**                                                           |
