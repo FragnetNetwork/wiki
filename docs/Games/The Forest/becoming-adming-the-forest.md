@@ -12,9 +12,9 @@ In order to become an admin, you will need to set an admin password on your serv
 
 *   Go to **Configure** option on the left-side menu and look for **Admin Password** variable.
 
-![Configure](images/configure.png)
+![Configure](..images/configure.png)
 
-![Admin Password](images/admin-password.png)
+![Admin Password](..images/admin-password.png)
 
 *   Set it to the password that you would like to use.
 

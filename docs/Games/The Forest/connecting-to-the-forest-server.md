@@ -4,8 +4,8 @@ Connecting via Server Browser
 =============================
 
 > GSLT Token needs to be set in **Steam Account Token** variable which can be found by navigating to **Configure** option on the left-side menu. Create a token [here](https://steamcommunity.com/dev/managegameservers) with app ID: 242760.
-![Configure](images/configure.png)
-![Example Steam Account Token](images/account-token.png)
+![Configure](..images/configure.png)
+![Example Steam Account Token](..images/account-token.png)
 Please, restart server for the change to be applied.
 
   

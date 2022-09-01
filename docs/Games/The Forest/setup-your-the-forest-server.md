@@ -9,7 +9,7 @@ How to modify your server settings
 
 *   Navigate to **Configure** option on the left-side menu and you will see all available configurations that can be changed on the server. 
 
-![Configure](images/configure.png)
+![Configure](..images/configure.png)
 
 *   Restart the server for the changes to be applied.
 
@@ -22,7 +22,7 @@ To add GSLT to your server do the following:
 *   Navigate to **Configure** option on the left-side mneu.
 *   Search for **STEAM ACCOUNT TOKEN** variable and paste your token that can be generated on https://steamcommunity.com/dev/managegameservers using APP ID: **242760**.
 
-![Steam Account Token](images/account-token.png)
+![Steam Account Token](..images/account-token.png)
 
 *   Restart the server for the changes to be applied.
 

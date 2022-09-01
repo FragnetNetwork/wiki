@@ -27,7 +27,7 @@ td {
 
 # The Forest
 
-An in-depth steps to configure your Forest server.
+An in-depth steps to configure your The Forest server.
 
 | **The Forest Knowledgebase Articles**                                                                                         |
 |-------------------------------------------------------------------------------------------------------------------------------|
