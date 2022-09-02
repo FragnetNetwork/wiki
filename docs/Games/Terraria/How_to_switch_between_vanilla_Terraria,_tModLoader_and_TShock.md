@@ -19,7 +19,7 @@ You can also use the **Backups** function, which can be found on the left-side m
 
 ![Backup Instructions](../images/backup-instructions.png)
 
-2\. Go to **Templates** on the left-side menu and select **Server Type** that you would like to install.
+2\. Go to **Template** on the left-side menu and select **Server Type** that you would like to install.
 
 ![Templates](../images/templates.png)
 

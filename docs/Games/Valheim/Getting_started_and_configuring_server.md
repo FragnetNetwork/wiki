@@ -2,7 +2,7 @@
 
 2\.  Go to the **Configure** tab and adjust variables to your preferences.
 
-![Configure](images/configure.png)
+![Configure](../images/configure.png)
 
 3\. If your server is running, you will need to restart your server. Otherwise, start the server, and all changes will be applied.  
 

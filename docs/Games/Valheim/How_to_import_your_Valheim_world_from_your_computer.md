@@ -1,35 +1,32 @@
-You can easily import your Valheim world, that’s located on your computer, to your server.
+You can easily import your Valheim world, located on your computer, to your server.
 
-### Method #1 Uploading files via GamePanel
+# Find your world files
 
-1.  Stop your server.
-    
-2.  Go to File Manager that is located on the gamepanel, navigate to worlds\\worlds folder
-    
-3.  Press Upload → Select files button and navigate to this folder: %UserProfile%\\AppData\\LocalLow\\IronGate\\Valheim\\worlds.
-    
-4.  Select all \*.db and \*.fwl files in that folder and upload them.
-    
-5.  Navigate to the Commandline Manager → Custom Commandlines
-    
-6.  Create a new one or edit the current one, and specify the world name that server should load
-    
-7.  Start your server.
-    
+You will need to go to `C:\Users\yourPCUsername\AppData\LocalLow\IronGate\Valheim\worlds` path and copy **yourWorldName.db**, **yourWorldName.fwl**, **yourWorldName.fwl.old**. 
 
-### Method #2 Uploading files via FTP
+![Cloud World Files](../images/cloud-world-saves.png)
 
-1.  Connect to your server FTP.
+If you have disabled Steam Cloud saves, you can find world files in the `C:\Users\yourPCUsername\AppData\LocalLow\IronGate\Valheim\worlds_local` path.
+
+![Local World Files](../images/local-world-saves.png)
+
+# Upload world to your Valheim server
+
+1\.  Stop your server.
     
-2.  Open the worlds\\worlds folder on your server
+2\.  Go to **File Manager** that is located on the Fragify panel, navigate to `.config/unity3d/IronGate/Valheim/worlds_local` path.
     
-3.  Open the %UserProfile%\\AppData\\LocalLow\\IronGate\\Valheim\\worlds\\ folder on your computer
-    
-4.  Drag and drop the .db and .fwl files from your computer to your server
-    
-5.  Navigate to the Commandline Manager → Custom Commandlines
-    
-6.  Create a new one or edit the current one, and specify the world name that server should load
-    
-7.  Start your server.
+3\.  You can drag and drop world files or use the **Upload** button.
+
+![World Files Server Location](../images/world-server.png)
+
+4\.  Navigate to the **Configure** option on the left-side menu and look for the **World Name** variable. Change it to the name of your uploaded world.
+
+![Configure](../images/configure.png)
+
+![World Name](../images/world-name.png)
+
+5\.  Start your server, and it will load your world.
+
+
     
