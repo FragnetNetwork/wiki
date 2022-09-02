@@ -1,11 +1,9 @@
-1.  Connect to your gamepanel with your given credentials here [https://gamepanel.fragnet.net/Login](https://gamepanel.fragnet.net/Login)  
-    ![Game Panel Login](../images/image2021-2-15_13-34-39.png)
+1\.  Login to the [Fragify panel](https://panel.fragify.net/auth/login) and select your The Forest server.
 
-2.   After you managed to login to your gamepanel go to Commandline Manager and create a custom commandline where you can edit the server name , world name and setting up a password (needs to be 5 characters or more), you can follow the gif for more details.  
+2\.  Go to the **Configure** tab and adjust variables to your preferences.
 
-![Fragnet](../images/Fragnet1.gif)
+![Configure](images/configure.png)
 
-       3. If your server was running the commandline will have restarted the server, or if your server was stopped just press start.  
-           At the end all should be working and now you only need to connect to your Valheim server.
+3\. If your server is running, you will need to restart your server. Otherwise, start the server, and all changes will be applied.  
 
-**As a precaution since this is a new game and can create issues with the files we automatically make a backup every time the server is stopped to make sure the world will not be corrupted and the data to get lost.**
+In the end, all should be working, and now you only need to connect to your Valheim server. You can check out our article explaining how to join your server [here](Connecting_to_your_server.md).

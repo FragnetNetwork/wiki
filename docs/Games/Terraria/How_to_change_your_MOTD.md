@@ -1,7 +1,7 @@
 Changing the MOTD is very simple with our game panel.
 Follow these steps to guide you on how to change it:
 
-1\. Go to your Terraria server on Fragify panel and click on the **Configure** tab.
+1\. Go to your Terraria server on the Fragify panel and click on the **Configure** tab.
 
 ![](../images/configure.png)
 

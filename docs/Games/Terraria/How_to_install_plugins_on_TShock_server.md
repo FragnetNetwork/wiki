@@ -1,13 +1,13 @@
-Adding plugins to your server is pretty easy first, go to https://github.com/Pryaxis/plugins and choose the plugins you want and download them.
+Adding plugins to your server is pretty straightforward. First, go to https://github.com/Pryaxis/plugins, choose the plugins you want, and download them.
 1\. Once downloaded, navigate to your **File Manager** on your Fragify panel.
 
 ![File Manager](../images/file-manager.png)
 
 2\. Go to the `ServerPlugins` folder and upload the plugin there.
-Files can be uploaded by drag and dropping the file to the folder directory or using **Upload** button.
+Files can be uploaded by dragging and dropping the file to the folder directory or using the **Upload** button.
 
 ![Upload](../images/upload-server-plugins.png)
 
-3\. Once done Start/Restart your server and your plugins have been installed.
+3\. Once done, Start/Restart your server, and your plugins have been installed.
  
-> Take note that almost all plugins wont properly work after a bigger update and they will require updating, and some plugins may not work properly if other similar plugins are impeding its work.
+> Take note that almost all plugins won't work correctly after a big update and will require updating. And some plugins may not work correctly if other similar plugins impede their work.

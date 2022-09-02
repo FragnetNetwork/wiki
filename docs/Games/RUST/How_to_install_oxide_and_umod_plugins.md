@@ -6,28 +6,28 @@ There are many oxide plugins that can be installed on the server and which can i
 
 *   **uMod/OxideMod**
 
-Oxide mod must be installed on your server in order plugins to run.  
-Simply navigate to **Configure** option on the left-side menu on Fragify Panel and click on **OxideMod** variable to be enabled!  
+Oxide mod must be installed on your server for plugins to run.  
+Navigate to the **Configure** option on the left-side menu on Fragify Panel and click on the **OxideMod** variable to be enabled!  
 
 ![Configure](../images/configure.png)
 
 ![OxideMod Enabled](../images/oxide-enabled.png)
 
-Start/Restart server for the oxide to be downloaded on the server. It will generate a new folder **oxide** in the main directory of your Rust server.
+Start/Restart the server for the oxide to be downloaded on the server. It will generate a new folder **oxide** in the main directory of your Rust server.
 
 Installing plugins on the server
 --------------------------------
 
 We need to install plugins on the server.  
-We have 2 methods that we can use for this: via **uMod Plugins** option on the left-side menu in Fragify panel or via File Manager.
+We have two methods that we can use for this: via the **uMod Plugins** option on the left-side menu in the Fragify panel or via File Manager.
 
 ### Method #1 Installing plugins via **uModP Plugins** option on panel
 
-* Go to **uMod Plugins** and search for plugins that you would like for the server to have.
+* Go to **uMod Plugins** and search for plugins that you would like the server to have.
 
 ![uMod Plugins](../images/umod-plugins.png)
 
-* Click on **Install** button on the plugins that you would like to install.
+* Click the **Install** button on the plugins you would like to install.
 
 ![Install Plugin](../images/install-plugin.png)
 
@@ -41,13 +41,13 @@ We have 2 methods that we can use for this: via **uMod Plugins** option on the l
 
 *   Go to **oxide/plugins** directory 
 
-*   Simply press **Upload** button and select the plugins (**.cs** files) you want to upload.  
+*   Simply press the **Upload** button and select the plugins (**.cs** files) you want to upload.  
 
-*   Once those files are uploaded, simply restart your server
+*   Once those files are uploaded, restart your server
 
 *   Your oxide plugins will now be loaded on the server!
 
 Your Oxide plugins will generate configuration files which you can edit.
-You can access those files by going to your **File Manager**. All plugin configs are located on the following location: **oxide/config** and you can edit files by just clicking on them. 
+You can access those files by going to your **File Manager**. All plugin configs are located in the following location: **oxide/config**, and you can edit files by just clicking on them. 
 
-You have successfully installed Oxide plugins to your Rust server!
+You have successfully installed Oxide plugins on your Rust server!

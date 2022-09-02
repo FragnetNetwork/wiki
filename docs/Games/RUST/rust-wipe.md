@@ -2,11 +2,11 @@
 
 It is recommended that Rust server owners reset their worlds every 30-days to help keep their server community active.  
 
-By doing the following steps, you will **irreversibly** delete your world file and/or player data.  
+By doing the following steps, you will **irreversibly** delete your world file and/or player data.  
 
-There are 2 ways you can wipe data from your Rust server:
+There are two ways you can wipe data from your Rust server:
 
-# #1 Using Fragify Wipe function
+# #1 Using the Fragify Wipe function
 ----------------------------------
 
 *   Login to the [Fragify panel](https://panel.fragify.net/auth/login) and select your Rust server.
@@ -16,19 +16,19 @@ There are 2 ways you can wipe data from your Rust server:
 ![Manage Wipes](../images/manage-wipes.png)
 
 *   Set the **name**, **description**, **map size** and **map seed** to your preferences or set to 0/empty to be left unchanged. 
-> If you wish to set random seed on every wipe, click on **Random Seed** to be enabled.
+> If you wish to set a random seed on every wipe, click on **Random Seed** to be enabled.
 
 ![Example of Wipe Options](../images/example-wipeoptions.png)
 
-*   If you want to remove specific files, you can input the exact path and name of the file and click on **Add** button. 
+*   If you want to remove specific files, you can input the exact path and name of the file and click on the **Add** button. 
 
-* You can also choose to **Wipe Blueprints**, **Wipe World**, **Restart Server** after wipe, **Schedule Wipe** for custom time and date. 
+* You can also choose to **Wipe Blueprints**, **Wipe World**, **Restart Server** after wipe, and **Schedule Wipe** for custom time and date. 
 
-*   Once ready, press **Wipe** button.
+*   Once ready, press the **Wipe** button.
 
 ![Example of Wipe Options](../images/example-wipeoptions1.png)
 
-*   Your server will restart and everything your selected will be wiped  
+*   Your server will restart, and everything your selected will be wiped  
 
 # #2 Manual wipe
 --------------
@@ -38,12 +38,12 @@ Manual wipe is done either via File Manager on our Fragify panel.
 Navigate to your `/server/yourServerIdentity` folder (by default it's `/server/rust`).  
 Your world and player data is stored here.
 
-To delete the **player data only**, delete the player **\*.db** files . This includes blueprints, inventories, positions, etc.  
+To delete the **player data only**, delete the player **\*.db** files. This includes blueprints, inventories, positions, etc.  
 
-Simply delete every file that starts with **player\_.db**.
+Delete every file that starts with **player\_.db**.
 
-To delete the **world data only**, delete the files ending with **.map** and **.sav**. If you're not using a custom map this will be the file labeled "proceduralmap".   
+To delete the **world data only**, delete the files ending with **.map** and **.sav**. If you're not using a custom map, this file will be labelled "proceduralmap".   
 
-If you want to completely wipe your server, you would simply need to delete all the files mentioned above.
+If you want to wipe your server entirely, you need to delete all the files mentioned above.
 
-By deleting these files, you will **irreversibly** delete your world file and/or player data. Be careful when proceeding with this!
+By deleting these files, you will **irreversibly** delete your world file and/or player data. Be careful when proceeding with this!

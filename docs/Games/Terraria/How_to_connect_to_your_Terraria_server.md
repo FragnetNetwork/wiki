@@ -7,13 +7,13 @@
 3\. Open your Terraria game and go to **Multiplayer** => **Join via IP**.
 Select your character. *Please, note that servers with Journey difficulty can be joined only by journey characters.*
 
-4\. Input only server's IP address in the next field and click **Accept**.
+4\. Input only the server's IP address in the text field, and click **Accept**.
 
 Example:
 
 ![IP](../images/ip.png)
 
-5\. Input port which in our case is 30000 and click **Accept**.
+5\. Input port which in our case is 30000, and click **Accept**.
 
 ![Port](../images/port.png)
 

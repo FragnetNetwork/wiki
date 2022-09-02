@@ -6,11 +6,11 @@ To change your RUST server name simply follow these steps:
 
 *   Login to the [Fragify panel](https://panel.fragify.net/auth/login) and select your Rust server.
 
-*   Navigate to **Configure** option on the left-side menu.
+*   Navigate to the **Configure** option on the left-side menu.
 
 ![Configure](../images/configure.png)
 
-*   Look for **Server Name** variable and set it to any name that you would like for your server to have.
+*   Look for the **Server Name** variable and set it to any name you would like your server to have.
 
 ![Server Name](../images/server-name.png)
 

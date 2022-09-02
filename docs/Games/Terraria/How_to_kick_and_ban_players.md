@@ -1,15 +1,15 @@
 
-# How to ban/kick player
+# How to ban/kick a player
 
 You can kick/ban players via the Fragify console simply by typing in the command and pressing **Enter/Return**.
 
 ![Console Window](../images/console-window.png)
 
-For player to be kicked from the server:
+For a player to be kicked from the server:
 ```
 kick playername 
 ```
-For player to be banned from the server:
+For a player to be banned from the server:
 ```
 ban playername
 ```
@@ -28,4 +28,4 @@ Once found, open the **banlist.txt**, and find the player you have banned. Remov
 
 ![Content of Banlist](../images/content-banlist.png)
 
-After you have removed both lines, press **Save Content** button located on the lower right side of the window and the player should be unbanned.
+After removing both lines, press the **Save Content** button on the lower right side of the window, and the player should be unbanned.

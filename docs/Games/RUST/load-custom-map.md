@@ -1,6 +1,6 @@
-# How to load custom map on your Rust Server
+# How to load the custom map on your Rust Server
 
-It is possible to have a custom map on the Rust Server apart from the original ones and it's rather easy to load one. You can get custom maps from http://playrust.io/
+It is possible to have a custom map on the Rust Server apart from the original ones, and it's relatively easy to load one. You can get custom maps from http://playrust.io/
 or https://rustmaps.com/.
 
 Just follow these simple steps:
@@ -11,7 +11,7 @@ Just follow these simple steps:
 
 3\.  Login to the [Fragify panel](https://panel.fragify.net/auth/login) and select your Rust server.
 
-4\.  Navigate to **Configure** option on the left-side menu and look for **Server Level URL** variable.
+4\.  Navigate to the **Configure** option on the left-side menu and look for **Server Level URL** variable.
 
 ![Configure](../images/configure.png)
 
@@ -25,6 +25,6 @@ Just follow these simple steps:
 ```
 https://www.dropbox.com/s/<randomcharacters>/<mapname>.map?dl=1
 ```
-7\.  Once done,restart the server so the changes can take effect.
+7\.  Once done, restart the server so the changes can take effect.
 
 You have now successfully added a custom map to your Rust server!
