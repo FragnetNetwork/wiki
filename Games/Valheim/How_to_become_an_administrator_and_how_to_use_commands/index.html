@@ -67,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#adding-an-admin-to-adminlisttxt" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -3943,7 +3948,7 @@
         
   
   <span class="md-ellipsis">
-    Installing rustio
+    Installing Rust:IO on your RUST server
   </span>
   
 
@@ -3963,7 +3968,7 @@
         
   
   <span class="md-ellipsis">
-    How to load custom map on your Rust Server
+    How to load the custom map on your Rust Server
   </span>
   
 
@@ -4708,7 +4713,7 @@
         
   
   <span class="md-ellipsis">
-    How to ban/kick player
+    How to ban/kick a player
   </span>
   
 
@@ -4851,7 +4856,7 @@
         
   
   <span class="md-ellipsis">
-    Connecting to the forest server
+    Connecting to your The Forest Server
   </span>
   
 
@@ -5514,6 +5519,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -5726,6 +5733,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -5739,35 +5748,47 @@
   
                 
   <a href="https://github.com/FragnetNetwork/wiki/edit/master/docs/Games/Valheim/How_to_become_an_administrator_and_how_to_use_commands.md" title="Edit this page" class="md-content__button md-icon">
+    
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-  <h1>How to become an administrator and how to use commands</h1>
-
-<p><strong>This guide will help you to understand on how to become an administrator and how to use commands while on the server.</strong></p>
+<p><strong>This guide will help you understand how to become an administrator and use commands while on the server.</strong></p>
+<h1 id="adding-an-admin-to-adminlisttxt">Adding an admin to adminlist.txt</h1>
+<p>1.  Login to the <a href="https://panel.fragify.net/auth/login">Fragify panel</a> and select your Valheim server.</p>
+<p>2. Go to <strong>File Manager</strong> and navigate to <code>.config/unity3d/IronGate/Valheim</code> directory. You will need to open the <strong>adminlist.txt</strong> file.</p>
+<p><img alt="File Manager" src="../images/file-manager.png" />
+<img alt="Adminlist" src="../images/adminlist.png" /></p>
+<p>3. You will need to input your <strong>Steam64ID</strong>. If you want to add several admins, you will need to paste each <strong>Steam64ID</strong> on the new line.</p>
+<p>If you don't know how to find your Steam64ID, follow those steps:</p>
+<ul>
+<li>Go to your Steam app =&gt; Profile and right-click anywhere in the window. </li>
+<li>Select the <strong>Copy Page URL</strong> option and paste your link on https://steamid.io/ 
+<img alt="Copy Page URL" src="../images/copy-page.png" /></li>
+</ul>
+<p>Alternatively, you can find Steam64ID by going to the Steam website and logging in =&gt; Select your profile and look at the URL in the browser. Steam64ID is a unique identifier that is shown after <code>https://steamcommunity.com/profiles/</code>
+<img alt="Steam Link" src="../images/steam-link.png" /></p>
+<p>4. Click on <strong>Save Content</strong> button after adding Steam64ID in <strong>adminlist.txt</strong> file.</p>
+<p>5. Start/Restart the server for the change to be applied.</p>
+<h1 id="enable-admin-console">Enable admin console</h1>
+<p>1. Open your Steam client and go to <strong>Library</strong> tab = Settings button =&gt; <strong>Properties...</strong> option. 
+<img alt="Properties" src="../images/properties.png" /></p>
+<p>2.In the <strong>General tab</strong>, you will need to add the <code>-console</code> argument to your <strong>Launch Options</strong>.
+<img alt="Launch Options" src="../images/launch-options.png" /></p>
+<p>3. Start your Valheim game. </p>
+<h1 id="how-to-use-the-console">How to use the console</h1>
 <ol>
 <li>
-<p>Start your server and join it.</p>
+<p>Start your server and join it. </p>
 </li>
 <li>
-<p>Once connected, press [F2] key to open player list.</p>
+<p>Once connected, press the [F5] key to open the console.</p>
 </li>
 <li>
-<p>Locate your player name on the list and copy the player ID.</p>
-</li>
-<li>
-<p>Stop your server.</p>
-</li>
-<li>
-<p>Navigate to your File Manager → worlds and edit the adminlist.txt</p>
-</li>
-<li>
-<p>Start your server and join it, press [F5] key to open console and type “<em>help</em>” for all available commands.</p>
+<p>Type "<em>help</em>" for all available commands.</p>
 </li>
 </ol>
-<p>Commands can be used in the console.</p>
 
   
     
@@ -5783,7 +5804,7 @@
         <span class="md-icon" title="Date of last update">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
         </span>
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-07-04</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-09-02</span>
       </span>
     
     
