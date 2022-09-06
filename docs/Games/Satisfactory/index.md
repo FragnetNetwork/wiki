@@ -31,7 +31,7 @@ An in-depth steps to configure your Satisfactory server.
 
 | **Satisfactory Knowledgebase Articles**                                                                |
 |-----------------------------------------------------------------------------------------------------------------|
-| **[How to acess your in-game console](How_to_access_your_in-game_console.md)**                                  |
+| **[How to access your in-game console](How_to_access_your_in-game_console.md)**                                  |
 | **[How to change my starting area](How_to_change_my_starting_area.md)**                                         |
 | **[How to change the name of your server](How_to_change_the_name_of_your_server.md)**                           |
 | **[How to change your admin password](How_to_change_your_admin_password.md)**                                   |
