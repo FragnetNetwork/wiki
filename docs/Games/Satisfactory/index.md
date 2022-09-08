@@ -38,3 +38,4 @@ An in-depth steps to configure your Satisfactory server.
 | **[How to change your game to experimental](How_to_change_your_game_to_experimental.md)**                       |
 | **[How to set a password for your server](How_to_set_a_password_for_your_server.md)**                           |
 | **["This server appears to be offline" and how to solve it](This_server_appears_to_be_offline_and_how_to_solve_it.md)**                                                                                                             |
+| **[How to claim and join your Satisfactory server](How_to_claim_and_join_your_Satisfactory_server.md)**                                                                                                             |

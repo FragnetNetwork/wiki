@@ -13,10 +13,13 @@ You can check the full list of Satisfactory commands here: https://satisfactory.
 If by any chance you are unable to turn on the console.
 You can turn it on with these steps:
 
-1. Close your Satisfactory game
-2. Press **WINDOWS + R** to open the RUN window, and paste this in there `%LOCALAPPDATA%\FactoryGame\Saved\Config\WindowsNoEditor`
-3. A window filled with ini files should popup. Find the file called **Input.ini**.
-4. Add these 2 lines to the bottom of the ini file:
+1\. Close your Satisfactory game.
+
+2\. Press **WINDOWS + R** to open the RUN window, and paste this line in there `%LOCALAPPDATA%\FactoryGame\Saved\Config\WindowsNoEditor`.
+
+3\. A window filled with ini files should popup. Find the file called **Input.ini**.
+
+4\. Add these 2 lines to the bottom of the ini file:
 ```
 [/script/engine.inputsettings]
 ConsoleKey=P

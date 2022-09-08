@@ -4,24 +4,24 @@ Changing your admin password is very simple in Satisfactory.
 
 To change your admin password please follow these steps:
 
-1. Go to your **Main Menu** and click on **Server Manager**.
+1\. Go to your **Main Menu** and click on **Server Manager**.
 
 ![Main Menu](../images/main-menu.png)
 
-2. Click on your server.
+2\. Click on your server.
 
 ![Server](../images/server.png)
 
-3. On the right side, various tabs should appear. Press the **Server Settings** tab. 
+3\. On the right side, various tabs should appear. Press the **Server Settings** tab. 
 
 ![Server Settings](../images/server-settings.png)
 
-4. Afterwards, navigate to **Administration Password** and click on the **Change Password** field, and a smaller window should pop up. 
+4\. Afterwards, navigate to **Administration Password** and click on the **Change Password** field, and a smaller window should pop up. 
 
 ![Change Administration Password](../images/change-admin-password.png)
 
-5. Type in any password you want and press **Confirm**.
+5\. Type in any password you want and press **Confirm**.
 
 ![Adminstration Password](../images/admin-password.png)
 
-6. Done! You have changed your **Administration Password** on your server. 
+6\. Done! You have changed your **Administration Password** on your server. 
