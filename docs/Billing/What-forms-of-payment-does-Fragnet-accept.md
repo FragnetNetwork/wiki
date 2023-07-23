@@ -1,4 +1,4 @@
-#What forms of payment does Fragnet accept?
+# What forms of payment does Fragnet accept?
 
 At the moment, we are accepting most major credit cards through PayPal/Stripe as well as regular bank transfers.
 
